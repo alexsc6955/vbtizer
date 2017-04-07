@@ -1,0 +1,31 @@
+/*! Grid */
+
+//
+// Grid Config vars
+//
+
+$grid-gap-width-base: 30px;
+$grid-gap-widths: (
+	xs: $grid-gap-width-base,
+	sm: $grid-gap-width-base,
+	md: $grid-gap-width-base,
+	lg: $grid-gap-width-base,
+	xl: $grid-gap-width-base
+);
+
+//
+// Grid Mixins
+@mixin make-container($gaps: $grid-gap-widths) {
+	margin: 0 auto;
+	@each $breakpoint in map-keys($gaps) {
+		@include media-breakpoint-up($breakpoint) {
+			$gap: map-get($gaps, $breakpoint);
+			padding-right: ($gap / 2);
+			padding-left:  ($gap / 2);
+		}
+	}
+}
+
+.container {
+	@include make-container;
+}

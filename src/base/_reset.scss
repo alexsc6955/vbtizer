@@ -21,7 +21,7 @@ body {
 		weight: $font-weight-base;
 	}
 	@each $brakepoint, $font-size in $font-sizes {
-		@include media-breakpoint-down($brakepoint) {
+		@include media-breakpoint($brakepoint) {
 			@include rem-px(font-size, $font-size);
 		}
 	}
