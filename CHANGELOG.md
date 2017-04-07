@@ -9,3 +9,10 @@
 **Changes**
 
 - Simplfy ``media-breakpoint`` mixin.
+
+## v-0.1.2
+
+**Changes**
+
+- Grid system started
+- ``.container`` class added

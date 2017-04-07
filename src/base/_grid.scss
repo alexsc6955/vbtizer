@@ -1,0 +1,50 @@
+/*! Grid */
+
+//
+// Grid Config vars
+//
+
+$grid-gap-width-base: 30px;
+$grid-gap-widths: (
+	xs: $grid-gap-width-base,
+	sm: $grid-gap-width-base,
+	md: $grid-gap-width-base,
+	lg: $grid-gap-width-base,
+	xl: $grid-gap-width-base
+);
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
+);
+
+
+//
+// Grid Mixins
+@mixin set-container-spaces($gaps: $grid-gap-widths) {
+	margin: 0 auto;
+	@each $breakpoint in map-keys($gaps) {
+		@include media-breakpoint($breakpoint) {
+			$gap: map-get($gaps, $breakpoint);
+			@include rem-px(padding-right, ($gap / 2));
+			@include rem-px(padding-left, ($gap / 2));
+		}
+	}
+}
+
+@mixin set-container-max-widths($max-widths: $container-max-widths) {
+	@each $breakpoint, $container-max-width in $max-widths {
+		@include media-breakpoint($breakpoint) {
+			width: $container-max-width;
+			max-width: 100%;
+		}
+	}
+}
+
+.container {
+	@include set-container-spaces;
+	@include set-container-max-widths;
+}

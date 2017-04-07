@@ -21,7 +21,7 @@ $ sass -v
 Now you need to download vbtizer or clone it using ``git``.
 
 ```
-$ git clone git@github.com:Rincorpes/vbtizer.git
+$ git clone git://github.com/schacon/grit.git
 ```
 
 ## Usage
@@ -39,14 +39,13 @@ Then compile the project
 
 ```
 sass --style compressed vbtizer.scss:[your css file path]
-
 ```
 
 ## Features
 
 - ``rem`` to ``px`` converter.
-- ``box-sizing`` mixin to use vendor prefix
-- Layout breakpoints mixins.
+- ``box-sizing`` mixin to use vendor prefix if older borowser support is enable
+- Layout breakpoints mixin.
 - Use ``rem`` and ``px`` with the same property for older browsers and ie support.
 - Normalize v5
 - Reset Css.
