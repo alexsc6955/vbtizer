@@ -49,3 +49,4 @@ sass --style compressed vbtizer.scss:[your css file path]
 - Use ``rem`` and ``px`` with the same property for older browsers and ie support.
 - Normalize v5
 - Reset Css.
+- Grid System
