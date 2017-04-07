@@ -1,0 +1,116 @@
+//
+// Variables
+//
+
+//
+// Accent Colors
+$silver: #dddddd;
+$navy: #00112b;
+$blue: #0066ff;
+$aqua: #55ddff;
+$teal: #00ccff;
+$olive: #165016;
+$green: #00d400;
+$lime: #00ff66;
+$yellow: #ffdc00;
+$orange: #ff7804;
+$red: #ff1313;
+$maroon: #2b0000;
+$fuchsia: #ff00cc;
+$purple: #aa00d4;
+
+//
+// Gray Scale
+$white: #fafafa;
+$gray-lighter: #eee;
+$gray-light: #999;
+$gray: #555;
+$gray-dark: #333;
+$gray-darker: #222;
+$black: #101010;
+
+//
+// Brand colors
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: $teal;
+$brand-warning: $orange;
+$brand-danger: $red;
+$brand-inverse: $gray-dark;
+
+//
+// Fonts
+//
+// Font families
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, "Courier New", monospace;
+
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$font-sizes: (
+	xs: .75rem,
+	sm: .875rem,
+	md: $font-size-base,
+	xl: 1.25rem
+);
+
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+//
+// Body
+$body-bg: $white;
+$body-color: $gray-dark;
+$inverse-bg: $gray-dark;
+$inverse-color: $gray-lighter;
+
+//
+// Links
+$link-color: $brand-primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 20%);
+$link-hover-decoration: underline;
+
+//
+// Support
+$enable-older-browsers-support: true;
+$enable-ie-support: true;
+
+// Rem to Pixels
+//
+// Convert 'rem's to 'px's
+// Inspired by: https://davidwalsh.name/rem-px-browser-function-sass
+//
+// returns the rem unit as an int
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1);
+}
+
+//
+// Returns the 'rem' value as a 'px' value
+//
+//		>> u(1rem, 16)
+//		Returns 16px
+@function u($values, $pixel-base : 16) {
+	$list: ();
+	@each $value in $values {
+		@if (type-of($value) == "number") and ($value != 0) {
+			$unit : unit($value);
+			$val  : parseInt($value);
+			@if ($unit == 'rem') {
+				$list: append($list, ($val * $pixel-base) + px);
+			}
+			@else {
+				@warn 'There is no unit conversion for "#{$unit}"';
+			}
+		}
+		@else {
+			$list: append($list, $value);
+		}
+	}
+	@return $list();
+}

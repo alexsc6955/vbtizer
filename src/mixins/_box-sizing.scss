@@ -1,0 +1,14 @@
+//
+// Boxs izing
+//
+
+//
+// Use this mixin for older Safary and Firefox Versions
+// Add vendor prefix if $older-browsers-support is enable
+@mixin box-sizing($arguments...) {
+	@if $enable-older-browsers-support {
+		-webkit-box-sizing: $arguments; // Safari <= 5
+		-moz-box-sizing: $arguments; // Firefox <= 19
+	}
+	box-sizing: $arguments;
+}

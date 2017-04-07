@@ -1,0 +1,236 @@
+/*! Reset Css */
+
+//
+// Reset the box-sizing
+//
+// Method by https://css-tricks.com/box-sizing/
+html {
+	@include box-sizing(border-box);
+}
+//
+// The same with '::after' and '::before'
+*, *::after, *::before {
+	@include box-sizing(inherit);
+}
+
+//
+// Reset body. Set font styles and colors
+body {
+	font: {
+		family: $font-family-base;
+		weight: $font-weight-base;
+	}
+	@each $brakepoint, $font-size in $font-sizes {
+		@include media-breakpoint-down($brakepoint) {
+			@include rem-px(font-size, $font-size);
+		}
+	}
+	line-height: $line-height-base;
+	color: $body-color;
+	background-color: $body-bg;
+}
+
+//
+// Force hiding elements with the 'hidden' HTML attribute (from PureCSS).
+[hidden] {
+	display: none !important;
+}
+
+//
+// Set links color and decoration
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	//
+	// When state hover or focus, change color and decoration
+	@include hover-focus {
+		color: $link-hover-color;
+		text-decoration: $link-decoration;
+	}
+}
+
+//    
+// Headings
+//
+// Remove top margin from all headings and set bottom margin
+h1, h2, h3, h4, h5, h6 {
+	margin: {
+		top: 0;
+		@include rem-px(bottom, .5rem);
+	}
+}
+
+//
+// Reset margins on paragraphs
+//
+// Similarly, remove '<p>'s default margin and add bottom margin
+p {
+	margin: {
+		top: 0;
+		@include rem-px(bottom, 1rem);
+	}
+}
+
+//
+// Lists
+//
+// Remove '<ol>'s, '<ul>'s and '<dl>'s default 'y axis' margins and set bottom margin
+ol,
+ul,
+dl {
+	margin: {
+		top: 0;
+		@include rem-px(bottom, 1rem);
+	}
+}
+//
+// Remove child '<ul>'s and '<ol>'s 'margin-bottom'
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+//
+// add font-weight bold to to '<dt>'s so we can make a difference from the '<dd>'s
+dt {
+	font-weight: $font-weight-bold;
+}
+dd {
+	margin: {
+		left: 0;
+		@include rem-px(bottom, .5rem);
+	}
+}
+
+//
+// Abbreviations
+//
+// If has 'title' attribute show the help mouse cursor
+abbr[title] {
+	cursor: help;
+}
+
+//
+// Address
+//
+// add 'margin-bottom', remove 'font-style' and let it get parent 'line-height'
+address {
+	@include rem-px(margin-bottom, 1rem);
+	font-style: normal;
+	line-height: inherit;
+}
+
+//
+// Blockquote
+//
+// Remove default margins and add 'margin-bottom'
+blockquote {
+	@include rem-px(margin, 0 0 1rem);
+}
+
+//
+// Pre
+//
+// Reset margins
+pre {
+	margin: {
+		top:0;
+		@include rem-px(bottom, 1rem);
+	}
+	overflow: auto;
+}
+
+//
+// Figures
+//
+// Reset margins setted in normalize to add rem support and make it
+// work all the other elements
+figure {
+	@include rem-px(margin, 0 0 1rem);
+}
+
+//
+// Images
+//
+// By default, `<img>`s are `inline-block`. This assumes that, and vertically
+// centers them. This won't apply should you reset them to `block` level.
+img {
+	vertical-align: middle;
+}
+
+//
+// Tables
+//
+// Collapse borders, no longer part of Normalize since v4
+table {
+	border-collapse: collapse;
+	//
+	//Reset caption margins, align and side
+	caption {
+		@include rem-px(padding, .75rem 0 .75rem);
+		text-align: left;
+		caption-side: bottom;
+	}
+	//
+	// Centered by default, align left to match the `<td>`s below.
+	th {
+		text-align: left;
+	}
+}
+
+//
+// Forms
+//
+// Reset margins
+form {
+	margin: {
+		top: 0;
+		@include rem-px(bottom, 1rem);
+	}
+	//
+	// Reset '<fieldset>'s spaces and borders
+	fieldset {
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	//
+	// Reset the entire legend element to match the '<fieldset>' element
+	legend {
+		display: block;
+		width: 100%;
+		padding: 0;
+		@include rem-px(margin-bottom, .5rem);
+		@include rem-px(font-size, 1.5rem);
+		line-height: inherit;
+	}
+	//
+	// Allow labels to use 'margin' for spacing.
+	label {
+		display: inline-block;
+		@include rem-px(margin-bottom, .5rem);
+	}
+	//
+	// inherit 'line-height'
+	input,
+	button,
+	select,
+	textarea {
+		line-height: inherit;
+	}
+	//
+	// Apply a disabled cursor for radios and checkboxes.
+	input[type="radio"],
+	input[type="checkbox"] {
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	//
+	// Textareas should really only resize vertically so they don't break their
+	// (horizontal) containers.
+	textarea {
+		resize: vertical;
+	}
+}

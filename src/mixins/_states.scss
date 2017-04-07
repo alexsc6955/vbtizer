@@ -1,0 +1,43 @@
+//
+// Hover and focus
+//
+
+
+@mixin hover() {
+	&:hover {
+		@content;
+	}
+}
+
+@mixin focus() {
+	&:focus {
+		@content;
+	}
+}
+
+@mixin visited() {
+	&:visited {
+		@content;
+	}
+}
+
+@mixin active() {
+	&:active {
+		@content;
+	}
+}
+
+@mixin hover-focus() {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin hover-focus-active() {
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
