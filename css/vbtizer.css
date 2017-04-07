@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.2.0
+ * Vbtizer v0.2.1
  * Copyright 2017
  */
 /* Normalize v5 */
@@ -393,32 +393,32 @@ form {
       width: 1140px;
       max-width: 100%; } }
 
-.containr-fluid {
+.container-fluid {
   margin: 0 auto;
   padding-right: 15px;
   padding-right: 0.9375rem;
   padding-left: 15px;
   padding-left: 0.9375rem; }
   @media (min-width: 576px) {
-    .containr-fluid {
+    .container-fluid {
       padding-right: 15px;
       padding-right: 0.9375rem;
       padding-left: 15px;
       padding-left: 0.9375rem; } }
   @media (min-width: 768px) {
-    .containr-fluid {
+    .container-fluid {
       padding-right: 15px;
       padding-right: 0.9375rem;
       padding-left: 15px;
       padding-left: 0.9375rem; } }
   @media (min-width: 992px) {
-    .containr-fluid {
+    .container-fluid {
       padding-right: 15px;
       padding-right: 0.9375rem;
       padding-left: 15px;
       padding-left: 0.9375rem; } }
   @media (min-width: 1200px) {
-    .containr-fluid {
+    .container-fluid {
       padding-right: 15px;
       padding-right: 0.9375rem;
       padding-left: 15px;

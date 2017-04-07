@@ -116,7 +116,7 @@ $grid-columns: 12;
 //
 // The diference width the prev one is that this container doesn't have
 // an specific size or sizes at breakpoints. Its width is 100%
-.containr-fluid {
+.container-fluid {
 	@include set-container-spaces;
 }
 //
