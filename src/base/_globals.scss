@@ -80,37 +80,9 @@ $link-hover-decoration: underline;
 $enable-older-browsers-support: true;
 $enable-ie-support: true;
 
-// Rem to Pixels
-//
-// Convert 'rem's to 'px's
-// Inspired by: https://davidwalsh.name/rem-px-browser-function-sass
-//
-// returns the rem unit as an int
-@function parseInt($n) {
-	@return $n / ($n * 0 + 1);
-}
 
 //
-// Returns the 'rem' value as a 'px' value
-//
-//		>> u(1rem, 16)
-//		Returns 16px
-@function u($values, $pixel-base : 16) {
-	$list: ();
-	@each $value in $values {
-		@if (type-of($value) == "number") and ($value != 0) {
-			$unit : unit($value);
-			$val  : parseInt($value);
-			@if ($unit == 'rem') {
-				$list: append($list, ($val * $pixel-base) + px);
-			}
-			@else {
-				@warn 'There is no unit conversion for "#{$unit}"';
-			}
-		}
-		@else {
-			$list: append($list, $value);
-		}
-	}
-	@return $list();
+// returns the unit as an int
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1);
 }

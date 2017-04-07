@@ -1,10 +1,35 @@
+// Rem to Pixels
 //
-// Rem and pixels
-//
+// Convert 'rem's to 'px's
+// Inspired by: https://davidwalsh.name/rem-px-browser-function-sass
 
-@mixin rem-px($property, $value) {
-	@if ($enable-older-browsers-support) or ($enable-ie-support) {
-		#{$property}: u($value);
+@mixin rem-px($property, $values, $pixel-base : 16) {
+	$px : ();
+	$rem: ();
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$px : append($px , $value);
+			$rem: append($rem, $value);
+		}
+		@else {
+			$unit: unit($value);
+			$val: parseInt($value);
+			@if $unit == "px" {
+				$px : append($px,  $value);
+				$rem: append($rem, ($val / $pixel-base + rem));
+			}
+			@if $unit == "rem" {
+				$px : append($px,  ($val * $pixel-base + px));
+				$rem: append($rem, $value);
+			}
+		}
 	}
-	#{$property}: $value;
+	@if $px == $rem {
+		#{$property}: $px;
+	} @else {
+		@if ($enable-older-browsers-support) or ($enable-ie-support) {
+			#{$property}: $px;
+		}
+		#{$property}: $rem;
+	}
 }
