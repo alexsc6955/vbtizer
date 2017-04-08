@@ -527,9 +527,6 @@ form {
 .col-12 {
   max-width: 100%; }
 
-.offset-col-0 {
-  margin-left: 0%; }
-
 .offset-col-1 {
   margin-left: 8.33333%; }
 
@@ -600,9 +597,6 @@ form {
   .col-sm-12 {
     max-width: 100%; }
 
-  .offset-col-sm-0 {
-    margin-left: 0%; }
-
   .offset-col-sm-1 {
     margin-left: 8.33333%; }
 
@@ -671,9 +665,6 @@ form {
 
   .col-md-12 {
     max-width: 100%; }
-
-  .offset-col-md-0 {
-    margin-left: 0%; }
 
   .offset-col-md-1 {
     margin-left: 8.33333%; }
@@ -744,9 +735,6 @@ form {
   .col-lg-12 {
     max-width: 100%; }
 
-  .offset-col-lg-0 {
-    margin-left: 0%; }
-
   .offset-col-lg-1 {
     margin-left: 8.33333%; }
 
@@ -815,9 +803,6 @@ form {
 
   .col-xl-12 {
     max-width: 100%; }
-
-  .offset-col-xl-0 {
-    margin-left: 0%; }
 
   .offset-col-xl-1 {
     margin-left: 8.33333%; }

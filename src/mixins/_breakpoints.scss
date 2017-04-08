@@ -32,3 +32,17 @@ $layout-breakpoints: (
 		@content;
 	}
 }
+
+@mixin media-breakpoint-max($name, $breakpoints: $layout-breakpoints) {
+	$next: next-map-item($name, map-keys($breakpoints));
+	$max: map-get($breakpoints, $next);
+	@debug $max;
+	@if $max {
+		@media (max-width: $max - 1) {
+			@content;
+		}
+	}
+	@else {
+		@content;
+	}
+}
