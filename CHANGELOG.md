@@ -61,3 +61,9 @@
 **Changes**
 
 - Code styles added.
+
+## v-0.4.2
+
+**Changes**
+
+- ``border-radius`` mixins added.
