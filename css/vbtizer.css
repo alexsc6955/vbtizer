@@ -347,6 +347,7 @@ form {
 
 /*! Grid */
 .container {
+  display: table;
   margin: 0 auto;
   padding-right: 15px;
   padding-right: 0.9375rem;
@@ -394,6 +395,7 @@ form {
       max-width: 100%; } }
 
 .container-fluid {
+  display: table;
   margin: 0 auto;
   padding-right: 15px;
   padding-right: 0.9375rem;
@@ -425,6 +427,7 @@ form {
       padding-left: 0.9375rem; } }
 
 .row {
+  display: table-cell;
   margin-right: -15px;
   margin-right: -0.9375rem;
   margin-left: -15px;
