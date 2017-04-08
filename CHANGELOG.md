@@ -90,3 +90,9 @@
 
 - Sections started.
 - ``.page-header`` css class added
+
+## v-0.4.9
+
+**Changes**
+
+- Sections change to components.
