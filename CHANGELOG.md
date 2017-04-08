@@ -23,3 +23,9 @@
 **Changes**
 
 - First version of the grid system finished
+
+## v-0.2.2
+
+**Changes**
+
+- Issue #3 fixed
