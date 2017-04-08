@@ -83,3 +83,10 @@
 **Changes**
 
 - Description in headings using ``<small>`` or ``.small``.
+
+## v-0.4.8
+
+**Changes**
+
+- Sections started.
+- ``.page-header`` css class added
