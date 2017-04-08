@@ -1052,4 +1052,10 @@ kbd {
   padding-top: 2rem;
   border-bottom: 2px solid #dddddd; }
 
+.page-footer {
+  min-height: 50px;
+  padding-top: 16px;
+  padding-top: 1rem;
+  border-top: 2px solid #dddddd; }
+
 /*# sourceMappingURL=vbtizer.css.map */
