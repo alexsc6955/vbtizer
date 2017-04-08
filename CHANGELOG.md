@@ -41,3 +41,9 @@
 **Changes**
 
 - Typography styles added
+
+## v-0.3.1
+
+**Changes**
+
+- Issue #1 fixed
