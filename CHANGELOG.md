@@ -103,3 +103,9 @@
 
 - ``.page-footer`` css class added.
 - Isue #5 fixed.
+
+## v-0.4.13
+
+**Changes**
+
+- ``.img-fluid`` css class added for resposive support.
