@@ -96,3 +96,10 @@
 **Changes**
 
 - Sections change to components.
+
+## v-0.4.11
+
+**Changes**
+
+- ``.page-footer`` css class added.
+- Isue #5 fixed.

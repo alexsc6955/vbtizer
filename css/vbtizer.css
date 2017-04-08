@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.4.9
+ * Vbtizer v0.4.11
  * Copyright 2017
  */
 /* Normalize v5 */
@@ -347,8 +347,8 @@ form {
 
 /*! Grid */
 .container {
-  display: table;
   margin: 0 auto;
+  overflow: hidden;
   padding-right: 15px;
   padding-right: 0.9375rem;
   padding-left: 15px;
@@ -395,8 +395,8 @@ form {
       max-width: 100%; } }
 
 .container-fluid {
-  display: table;
   margin: 0 auto;
+  overflow: hidden;
   padding-right: 15px;
   padding-right: 0.9375rem;
   padding-left: 15px;
@@ -427,7 +427,7 @@ form {
       padding-left: 0.9375rem; } }
 
 .row {
-  display: table-cell;
+  overflow: hidden;
   margin-right: -15px;
   margin-right: -0.9375rem;
   margin-left: -15px;
