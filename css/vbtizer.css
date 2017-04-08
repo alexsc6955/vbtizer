@@ -1029,4 +1029,12 @@ kbd {
     -webkit-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
     -moz-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25); }
 
+.page-header {
+  min-height: 50px;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  border-bottom: 2px solid #dddddd; }
+
 /*# sourceMappingURL=vbtizer.css.map */
