@@ -1,0 +1,89 @@
+//
+// Code
+//
+$code-font-size: 90% !default;
+$code-padding-x: .4rem !default;
+$code-padding-y: .2rem !default;
+$code-color: #bd4147 !default;
+$code-bg: $gray-lighter !default;
+
+$kbd-color: $white !default;
+$kbd-bg: $gray-dark !default;
+$kbd-box-shadow: inset 0 -.1rem 0 rgba($black,.25) !default;
+$nested-kbd-font-weight: $font-weight-bold !default;
+
+$pre-bg: $gray-lighter !default;
+$pre-color: $gray-dark !default;
+$pre-border-width: .0625rem;
+$pre-border-color: #ccc !default;
+$pre-scrollable-max-height: 340px !default;
+//
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+	font-family: $font-family-monospace;
+}
+//
+// Blocks of code
+pre {
+	display: block;
+	margin: {
+		top: 0;
+		@include rem-px(bottom, 1rem);
+	}
+	@include rem-px(padding, 1rem);
+	font-size: $code-font-size;
+	color: $pre-color;
+	background-color: $pre-bg;
+	border: $pre-border-width solid $pre-border-color;
+	//
+	// Account for some code outputs that place code tags in pre tags
+	code {
+		padding: 0;
+		font-size: inherit;
+		color: inherit;
+		background-color: transparent;
+		border-radius: 0;
+	}
+	//
+	// Enable scrollable blocks of code
+	&.pre-scrollable {
+		max-height: $pre-scrollable-max-height;
+		overflow-y: scroll;
+	}
+}
+
+// Inline code
+code {
+	@include rem-px(padding, $code-padding-y $code-padding-x);
+	font-size: $code-font-size;
+	color: $code-color;
+	background-color: $code-bg;
+	//border-radius
+
+	// Streamline the style when inside anchors to avoid broken underline and more
+	a > & {
+		padding: 0;
+		color: inherit;
+		background-color: inherit;
+	}
+}
+
+// User input typically entered via keyboard
+kbd {
+	padding: $code-padding-y $code-padding-x;
+	font-size: $code-font-size;
+	color: $kbd-color;
+	background-color: $kbd-bg;
+	//border-radius;
+	//box-shadow
+
+	kbd {
+		padding: 0;
+		font-size: 100%;
+		font-weight: $nested-kbd-font-weight;
+		//box-shadow
+	}
+}

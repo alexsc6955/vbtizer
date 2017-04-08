@@ -76,9 +76,10 @@ $link-hover-color: darken($link-color, 20%);
 $link-hover-decoration: underline;
 
 //
-// Support
+// Options
 $enable-older-browsers-support: true;
 $enable-ie-support: true;
+$enable-rounded: true;
 
 
 //
