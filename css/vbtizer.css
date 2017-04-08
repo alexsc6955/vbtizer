@@ -969,4 +969,52 @@ blockquote,
     .blockquote .blockquote-footer::before {
       content: "\2014 \00A0"; }
 
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding: 16px;
+  padding: 1rem;
+  font-size: 90%;
+  color: #333;
+  background-color: #eee;
+  border: 0.0625rem solid #ccc; }
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0; }
+  pre.pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll; }
+
+code {
+  padding: 3.2px 6.4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #eee; }
+  a > code {
+    padding: 0;
+    color: inherit;
+    background-color: inherit; }
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #fafafa;
+  background-color: #333; }
+  kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: bold; }
+
 /*# sourceMappingURL=vbtizer.css.map */
