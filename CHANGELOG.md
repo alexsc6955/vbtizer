@@ -55,3 +55,9 @@
 - Issue #2 fixed.
 - Found a bug similar to Issue #1 and solved it.
 - ``media-break-point-max`` mixin added.
+
+## v-0.4.0
+
+**Changes**
+
+- Code styles added.
