@@ -24,6 +24,12 @@
 
 - First version of the grid system finished
 
+## v-0.2.1
+
+**Changes**
+
+- ``.container-fluid`` class name fixed
+
 ## v-0.2.2
 
 **Changes**
