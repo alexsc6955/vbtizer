@@ -1,0 +1,156 @@
+// Fonts
+//
+// Headings
+$headings-font-sizes: (
+	1: 2.5rem,
+	2: 2rem,
+	3: 1.75rem,
+	4: 1.5rem,
+	5: 1.25rem,
+	6: 1rem
+);
+
+$headings-margin-bottom: .5rem;
+$headings-font-family: inherit ;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
+$hr-spaces: 1rem;
+$hr-border-color: rgba($black,.1);
+$hr-border-style: solid;
+$hr-border-width: 2px;
+
+$paragrph-color: $body-color;
+$lead-font-size: 1.25rem;
+$lead-font-sizes: (
+	xs: .875rem,
+	sm: 1rem,
+	md: 1.125rem,
+	lg: 1.25rem,
+	xl: 1.5rem
+);
+$lead-font-weight: 300;
+
+$small-font-size: 80%;
+
+$mark-padding: .1rem;
+$mark-bg: #fcf8e3;
+
+$list-inline-gap: .3125rem;
+
+$blockquote-small-color: $gray-light;
+$blockquote-font-sizes: (
+	xs: (map-get($font-sizes, xs) * 1.25),
+	sm: (map-get($font-sizes, sm) * 1.25),
+	md: (map-get($font-sizes, md) * 1.25),
+	lg: (map-get($font-sizes, lg) * 1.25),
+	xl: (map-get($font-sizes, xl) * 1.25),
+);
+$blockquote-border-color: $gray-lighter;
+$blockquote-border-width: .25rem;
+
+@mixin make-headings($font-sizes: $headings-font-sizes) {
+	%headings {
+		@include rem-px(margin-bottom, $headings-margin-bottom);
+		font: {
+			family: $headings-font-family;
+			weight: $headings-font-weight;
+		}
+		line-height: $headings-line-height;
+		color: $headings-color;
+	}
+	@each $i, $size in $font-sizes {
+		h#{$i}, .h#{$i} {
+			@include rem-px(font-size, $size);
+			@extend %headings;
+		}
+	}
+}
+
+@mixin list-unstyled() {
+	padding-left: 0;
+	list-style: none;
+}
+
+@include make-headings;
+
+hr {
+	margin: {
+		@include rem-px(top, $hr-spaces);
+		@include rem-px(bottom, $hr-spaces);
+	}
+	border: 0 {
+		top: $hr-border-width $hr-border-style $hr-border-color
+	}
+}
+
+p {
+	color: $paragrph-color;
+}
+
+.lead {
+	@each $breakpoint, $size in $lead-font-sizes {
+		@include media-breakpoint($breakpoint) {
+			@include rem-px(font-size, $size);
+		}
+	}
+	font-weight: $lead-font-weight;
+}
+
+small,
+.small {
+	font: {
+		size: $small-font-size;
+		weight: $font-weight-normal;
+	}
+}
+
+mark,
+.mark {
+	@include rem-px(padding, $mark-padding);
+	background-color: $mark-bg;
+}
+
+.list-unstyled {
+	@include list-unstyled;
+}
+
+.list-inline {
+	@include list-unstyled;
+	> li {
+		display: inline-block;
+		:not(:last-child) {
+			@include rem-px(margin-right, $list-inline-gap);
+		}
+	}
+}
+
+abbr,
+.initialism {
+	font-size: 90%;
+	text-transform: uppercase;
+}
+
+blockquote,
+.blockquote {
+	@include rem-px(padding, .5rem, 1rem);
+	margin: {
+		@include rem-px(top, 1rem);
+		@include rem-px(bottom, 1rem);
+	}
+	@each $breakpoint, $size in $blockquote-font-sizes {
+		@include media-breakpoint($breakpoint) {
+			@include rem-px(font-size, $size);
+		}
+	}
+	border-left: $blockquote-border-width solid $blockquote-border-color;
+	.blockquote-footer {
+		font-size: 80%;
+		display: block; // Force it to display as an independent block
+		color: $blockquote-small-color;
+		&::before {
+			content: "\2014 \00A0"; // em dash, nbsp
+		}
+	}
+}
