@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.4.6
+ * Vbtizer v0.4.7
  * Copyright 2017
  */
 /* Normalize v5 */
@@ -843,6 +843,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
+  h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small,
+  h1 .small,
+  .h1 .small,
+  h2 .small,
+  .h2 .small,
+  h3 .small,
+  .h3 .small,
+  h4 .small,
+  .h4 .small,
+  h5 .small,
+  .h5 .small,
+  h6 .small,
+  .h6 .small {
+    color: #999;
+    font-size: 70%; }
 
 h1, .h1 {
   font-size: 40px;

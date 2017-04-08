@@ -77,3 +77,9 @@
 - Apply ``border-radius`` to ``<kbd>`` element.
 - Apply ``box-shadow`` to ``<kbd>`` element.
 - Apply small ``border-radius`` to nested ``<kbd>`` element.
+
+## v-0.4.7
+
+**Changes**
+
+- Description in headings using ``<small>`` or ``.small``.
