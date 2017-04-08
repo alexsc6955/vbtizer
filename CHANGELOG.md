@@ -35,3 +35,9 @@
 **Changes**
 
 - Issue #3 fixed
+
+## v-0.3.0
+
+**Changes**
+
+- Typography styles added

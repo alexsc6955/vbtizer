@@ -50,3 +50,4 @@ sass --style compressed vbtizer.scss:[your css file path]
 - Normalize v5
 - Reset Css.
 - Grid System
+- Typography styles
