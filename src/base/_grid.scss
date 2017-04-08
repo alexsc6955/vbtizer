@@ -83,7 +83,7 @@ $grid-columns: 12;
 	}
 	@each $breakpoint, $value in $breakpoints {
 		$infix: if($value != 0, "-" + $breakpoint, null);
-		@for $i from 0 through $columns {
+		@for $i from 1 through $columns {
 			.col#{$infix}-#{$i} {
 				@extend %grid-column-common;
 			}
