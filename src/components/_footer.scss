@@ -1,9 +1,10 @@
 $page-foot-min-height: 50px;
-$page-foot-margin-bottom: 2rem;
+$page-foot-margin-top: 1rem;
 $page-foot-padding-top: 1rem;
 
 .page-footer {
 	min-height: $page-foot-min-height;
 	@include rem-px(padding-top, $page-foot-padding-top);
+	@include rem-px(margin-top, $page-foot-margin-top);
 	border-top: 2px solid $silver;
 }

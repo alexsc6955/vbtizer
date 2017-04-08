@@ -109,3 +109,17 @@
 **Changes**
 
 - ``.img-fluid`` css class added for resposive support.
+
+## v-0.5.0
+
+**Changes**
+
+- Navbar component added.
+
+## v-0.5.0
+
+**Changes**
+
+- ``.navbar`` ``margin-bottom`` changed to ``.5rem`` default.
+- ``page-footer`` ``margin-top`` added.
+- ``page-header`` ``margin-bottom`` changed to ``1rem`` that is the standar for the layout.
