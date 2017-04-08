@@ -27,6 +27,7 @@ $grid-columns: 12;
 //
 // Center container and set lef and right padding.
 @mixin set-container-spaces($gaps: $grid-gap-widths) {
+	display: table; // Fix issue #3
 	margin: 0 auto;
 	@each $breakpoint in map-keys($gaps) {
 		@include media-breakpoint($breakpoint) {
@@ -49,6 +50,7 @@ $grid-columns: 12;
 //
 // Set row left and right margins
 @mixin set-row-spaces($gaps: $grid-gap-widths) {
+	display: table-cell; // Fix issue #3
 	@each $breakpoint in map-keys($gaps) {
 		@include media-breakpoint($breakpoint) {
 			$gap: map-get($gaps, $breakpoint);
