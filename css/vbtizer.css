@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.4.2
+ * Vbtizer v0.4.6
  * Copyright 2017
  */
 /* Normalize v5 */
@@ -1001,7 +1001,10 @@ code {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #bd4147;
-  background-color: #eee; }
+  background-color: #eee;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  background-clip: padding-box; }
   a > code {
     padding: 0;
     color: inherit;
@@ -1011,10 +1014,19 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #fafafa;
-  background-color: #333; }
+  background-color: #333;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  background-clip: padding-box;
+  box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
+  -webkit-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
+  -moz-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25); }
   kbd kbd {
     padding: 0;
     font-size: 100%;
-    font-weight: bold; }
+    font-weight: bold;
+    box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
+    -webkit-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
+    -moz-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25); }
 
 /*# sourceMappingURL=vbtizer.css.map */

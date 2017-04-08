@@ -76,10 +76,17 @@ $link-hover-color: darken($link-color, 20%);
 $link-hover-decoration: underline;
 
 //
-// Options
+// Boreder radius
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+//
+// Support
 $enable-older-browsers-support: true;
 $enable-ie-support: true;
 $enable-rounded: true;
+$enable-box-shadow: true;
 
 
 //

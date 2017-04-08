@@ -67,3 +67,13 @@
 **Changes**
 
 - ``border-radius`` mixins added.
+
+## v-0.4.6
+
+**Changes**
+
+- ``box-shadow`` mixin added.
+- Apply ``border-radius`` to ``<code>`` inline element.
+- Apply ``border-radius`` to ``<kbd>`` element.
+- Apply ``box-shadow`` to ``<kbd>`` element.
+- Apply small ``border-radius`` to nested ``<kbd>`` element.
