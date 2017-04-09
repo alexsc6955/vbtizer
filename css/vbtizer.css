@@ -238,6 +238,9 @@ body {
 [hidden] {
   display: none !important; }
 
+[role=button] {
+  cursor: pointer; }
+
 a {
   color: #0066ff;
   text-decoration: none; }

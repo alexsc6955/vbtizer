@@ -39,6 +39,12 @@ body {
 }
 
 //
+// Force buttons to have the pointer coursor
+[role=button] {
+	cursor: pointer;
+}
+
+//
 // Set links color and decoration
 a {
 	color: $link-color;
