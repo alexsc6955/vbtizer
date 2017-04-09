@@ -20,11 +20,12 @@ body {
 		family: $font-family-base;
 		weight: $font-weight-base;
 	}
+	//@include rem-px(font-size, map-get($font-sizes, md));
 	//
 	// Font size for each breakpoint
 	@each $brakepoint, $font-size in $font-sizes {
 		@include media-breakpoint($brakepoint) {
-			@include rem-px(font-size, $font-size);
+			font-size: $font-size;
 		}
 	}
 	line-height: $line-height-base;
@@ -64,7 +65,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
 	margin: {
 		top: 0;
-		@include rem-px(bottom, .5rem);
+		@include rem-px(bottom, ($spacer / 2));
 	}
 }
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin: {
 		top: 0;
-		@include rem-px(bottom, 1rem);
+		@include rem-px(bottom, $spacer);
 	}
 }
 
@@ -88,7 +89,7 @@ ul,
 dl {
 	margin: {
 		top: 0;
-		@include rem-px(bottom, 1rem);
+		@include rem-px(bottom, $spacer);
 	}
 }
 //
@@ -107,7 +108,7 @@ dt {
 dd {
 	margin: {
 		left: 0;
-		@include rem-px(bottom, .5rem);
+		@include rem-px(bottom, ($spacer / 2));
 	}
 }
 
@@ -124,7 +125,7 @@ abbr[title] {
 //
 // add 'margin-bottom', remove 'font-style' and let it get parent 'line-height'
 address {
-	@include rem-px(margin-bottom, 1rem);
+	@include rem-px(margin-bottom, $spacer);
 	font-style: normal;
 	line-height: inherit;
 }
@@ -134,7 +135,7 @@ address {
 //
 // Remove default margins and add 'margin-bottom'
 blockquote {
-	@include rem-px(margin, 0 0 1rem);
+	@include rem-px(margin, 0 0 $spacer);
 }
 
 //
@@ -155,7 +156,7 @@ pre {
 // Reset margins setted in normalize to add rem support and make it
 // work all the other elements
 figure {
-	@include rem-px(margin, 0 0 1rem);
+	@include rem-px(margin, 0 0 $spacer);
 }
 
 //
@@ -194,7 +195,7 @@ table {
 form {
 	margin: {
 		top: 0;
-		@include rem-px(bottom, 1rem);
+		@include rem-px(bottom, $spacer);
 	}
 	//
 	// Reset '<fieldset>'s spaces and borders

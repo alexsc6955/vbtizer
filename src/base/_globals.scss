@@ -3,9 +3,30 @@
 //
 
 //
-// Variables
+// Funcotions
 //
+// returns the unit as an int
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1);
+}
 
+@function next-map-item($name, $items) {
+	$n: index($items, $name);
+	@return if($n < length($items), nth($items, $n + 1), null);
+}
+
+$font-size-pixel-base: 16px;
+
+@function rem($unit, $base: $font-size-pixel-base) {
+	@return (parseInt($unit) / parseInt($base) + rem);
+}
+
+@function px($unit, $base: $font-size-pixel-base) {
+	@return (parseInt($unit) * parseInt($base) + px);
+}
+
+//
+// Vars
 //
 // Accent Colors
 $silver: #dddddd;
@@ -51,12 +72,13 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Menlo, Monaco, "Courier New", monospace;
 
 $font-family-base: $font-family-sans-serif;
+
 $font-sizes: (
-	xs: .75rem,
-	sm: .875rem,
-	md: 1rem,
-	lg: 1.125rem,
-	xl: 1.25rem
+	xs: ($font-size-pixel-base - 4),
+	sm: ($font-size-pixel-base - 2),
+	md: $font-size-pixel-base,
+	lg: ($font-size-pixel-base + 2),
+	xl: ($font-size-pixel-base + 4)
 );
 
 $font-weight-normal: normal;
@@ -79,6 +101,8 @@ $link-decoration: none;
 $link-hover-color: darken($link-color, 20%);
 $link-hover-decoration: underline;
 
+$spacer: 1rem;
+
 //
 // Boreder radius
 $border-radius: .25rem;
@@ -91,16 +115,3 @@ $enable-older-browsers-support: true;
 $enable-ie-support: true;
 $enable-rounded: true;
 $enable-box-shadow: true;
-
-//
-// Funcotions
-//
-// returns the unit as an int
-@function parseInt($n) {
-	@return $n / ($n * 0 + 1);
-}
-
-@function next-map-item($name, $items) {
-	$n: index($items, $name);
-	@return if($n < length($items), nth($items, $n + 1), null);
-}

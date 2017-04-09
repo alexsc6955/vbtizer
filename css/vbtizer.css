@@ -214,26 +214,21 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 12px;
-  font-size: 0.75rem;
   line-height: 1.5;
   color: #333;
   background-color: #fafafa; }
   @media (min-width: 576px) {
     body {
-      font-size: 14px;
-      font-size: 0.875rem; } }
+      font-size: 14px; } }
   @media (min-width: 768px) {
     body {
-      font-size: 16px;
-      font-size: 1rem; } }
+      font-size: 16px; } }
   @media (min-width: 992px) {
     body {
-      font-size: 18px;
-      font-size: 1.125rem; } }
+      font-size: 18px; } }
   @media (min-width: 1200px) {
     body {
-      font-size: 20px;
-      font-size: 1.25rem; } }
+      font-size: 20px; } }
 
 [hidden] {
   display: none !important; }
@@ -949,8 +944,8 @@ abbr,
 
 blockquote,
 .blockquote {
-  padding: 0.5rempx;
-  padding: 0.5rem;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   margin-top: 16px;
   margin-top: 1rem;
   margin-bottom: 16px;

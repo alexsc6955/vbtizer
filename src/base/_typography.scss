@@ -182,7 +182,7 @@ abbr,
 // Blockquotes
 blockquote,
 .blockquote {
-	@include rem-px(padding, .5rem, 1rem);
+	@include rem-px(padding, .5rem 1rem);
 	margin: {
 		@include rem-px(top, 1rem);
 		@include rem-px(bottom, 1rem);

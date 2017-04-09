@@ -7,7 +7,7 @@
 //
 // Convert 'rem's to 'px's
 // Inspired by: https://davidwalsh.name/rem-px-browser-function-sass
-@mixin rem-px($property, $values, $pixel-base : 16) {
+@mixin rem-px($property, $values) {
 	$px : ();
 	$rem: ();
 	@each $value in $values {
@@ -20,10 +20,10 @@
 			$val: parseInt($value);
 			@if $unit == "px" {
 				$px : append($px,  $value);
-				$rem: append($rem, ($val / $pixel-base + rem));
+				$rem: append($rem, rem($val));
 			}
 			@if $unit == "rem" {
-				$px : append($px,  ($val * $pixel-base + px));
+				$px : append($px,  px($val));
 				$rem: append($rem, $value);
 			}
 		}
