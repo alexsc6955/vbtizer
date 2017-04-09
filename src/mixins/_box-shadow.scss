@@ -1,3 +1,8 @@
+//
+// Box Shadow mixin
+//
+// Use this mixin to add shadows with vendor prefix
+// if shadows support is enable.
 @mixin box-shadow($shadows) {
 	@if $enable-box-shadow {
 		box-shadow: $shadows;

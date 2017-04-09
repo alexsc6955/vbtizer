@@ -1,3 +1,9 @@
+//
+// Border radius Mixins
+//
+// Use this mixins to add vendor prefix to the
+// `border-radius` css property if rounded support
+// is enable.
 @mixin border-radius($radius) {
 	@if $enable-rounded  {
 		-webkit-border-radius: $radius;
@@ -5,9 +11,8 @@
 		background-clip: padding-box; // stops bg color from leaking outside the border:
 	}
 }
-
+//
 // Single side border-radius
-
 @mixin border-top-radius($radius) {
 	@if $enable-rounded {
 		-webkit-border-top-right-radius: $radius;

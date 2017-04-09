@@ -2,42 +2,26 @@
 // Hover and focus
 //
 
-
+//
+// Mixins
+//
+// only hover
 @mixin hover() {
 	&:hover {
 		@content;
 	}
 }
-
+//
+// Only fouc
 @mixin focus() {
 	&:focus {
 		@content;
 	}
 }
-
-@mixin visited() {
-	&:visited {
-		@content;
-	}
-}
-
-@mixin active() {
-	&:active {
-		@content;
-	}
-}
-
+// Hover and Focus
 @mixin hover-focus() {
 	&:hover,
 	&:focus {
-		@content;
-	}
-}
-
-@mixin hover-focus-active() {
-	&:hover,
-	&:focus,
-	&:active {
 		@content;
 	}
 }

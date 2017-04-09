@@ -1,7 +1,16 @@
+//
+// Header
+//
+
+//
+// Vars
 $page-head-min-height: 50px;
 $page-head-margin-bottom: 1rem;
 $page-head-padding-top: 2rem;
 
+//
+// Css classes and elements
+/*! Header Componet */
 .page-header {
 	min-height: $page-head-min-height;
 	@include rem-px(margin-bottom, $page-head-margin-bottom);

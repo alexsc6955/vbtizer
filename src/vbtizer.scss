@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.5.11
+ * Vbtizer v0.5.12
  * Copyright 2017
  */
 
@@ -8,11 +8,13 @@
 //
 // Global vars and function
 @import 'base/globals';
+
 //
 // Css properties
 @import 'mixins/box-sizing';
 @import 'mixins/border-radius';
 @import 'mixins/box-shadow';
+
 //
 // Core
 @import 'mixins/breakpoints';

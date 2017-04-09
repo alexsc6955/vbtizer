@@ -1,12 +1,19 @@
+//
 // Responsive image
 //
-// Keep images from scaling beyond the width of their parents.
 
+//
+// Mixins
+//
+// Keep images from scaling beyond the width of their parents.
 @mixin img-fluid {
 	max-width: 100%;
 	height: auto;
 }
 
+//
+// Css classes and elements
+/*! Responsive Images */
 .img-fluid {
 	@include img-fluid;
 }

@@ -1,9 +1,11 @@
-/*! Grid */
+//
+// Grid
+//
 
 //
-// Grid Config vars
+// Vars
 //
-// Gap widths, '.container' sizes for diferent breakpoints and gridd colums
+// Gap widths, '.container' sizes for diferent breakpoints and grid colums
 $grid-gap-width-base: 30px;
 $grid-gap-widths: (
 	xs: $grid-gap-width-base,
@@ -23,7 +25,7 @@ $container-max-widths: (
 $grid-columns: 12;
 
 //
-// Grid Mixins
+// Mixins
 //
 // Center container and set lef and right padding.
 @mixin set-container-spaces($gaps: $grid-gap-widths) {
@@ -109,6 +111,9 @@ $grid-columns: 12;
 	}
 }
 
+//
+// Css classes and elements
+/*! Grid System */
 //
 // Set container spaces and width at the diferent breakpoints
 .container {

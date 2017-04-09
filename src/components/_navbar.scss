@@ -1,3 +1,12 @@
+//
+// Navbar
+//
+
+//
+// Css classes and elements
+//
+// The navbar container
+/*! Navbar Component */
 .navbar {
 	position: relative;
 	margin-bottom: .5rem;
@@ -5,7 +14,12 @@
 	padding-left: 1rem;
 	border-bottom: 1px solid transparent;
 	@include border-radius(5px);
-	@include clearfix;
+	@include clearfix; // Avoid floated elements bother.
+	//
+	// Nav
+	//
+	// use with an unordered list. This will contain the
+	// link list
 	.nav {
 		@include list-unstyled;
 		margin: 0 -1rem;
@@ -19,20 +33,32 @@
 			}
 		}
 	}
+	//
+	// Avoid `<h1` margins makes a mess with the navabr
+	// because of its default styles
+	//
+	// You can use this as a `.navbar-brand` wrapper.
 	h1 {
 		margin: 0;
 		font-size: inherit;
 		line-height: inherit;
 		float: left;
 	}
+	//
+	// To add the brand image and the brand title.
 	.navbar-brand {
 		float: left;
 		font-size: 120%;
 		padding: .5rem 0;
 		margin-right: 1rem;
+		//
+		// Avoid default background color when hover
 		@include hover-focus {
 			background-color: transparent;
 		}
+		//
+		// Rexise its height to 40px to make if fix with
+		// the navbar layout.
 		img {
 			width: auto;
 			max-height: 40px;
@@ -40,12 +66,17 @@
 			margin-right: .625rem; // 10px
 		}
 	}
+	//
+	// Center verticaly any text to make them fix with
+	// the layout.
 	.navbar-text {
 		margin: .875rem 0;
 		font-size: 80%;
 		float: left;
 		margin-right: 1rem;
 	}
+	//
+	// .navbar variants
 	&-light {
 		background-color: #f8f8f8;
 		border-color: #e7e7e7;

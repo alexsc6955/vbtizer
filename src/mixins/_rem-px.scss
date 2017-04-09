@@ -1,8 +1,12 @@
+//
 // Rem to Pixels
+//
+
+//
+// Mixins
 //
 // Convert 'rem's to 'px's
 // Inspired by: https://davidwalsh.name/rem-px-browser-function-sass
-
 @mixin rem-px($property, $values, $pixel-base : 16) {
 	$px : ();
 	$rem: ();

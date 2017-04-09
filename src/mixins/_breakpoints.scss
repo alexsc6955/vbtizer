@@ -2,10 +2,13 @@
 // Layout breakpoints
 //
 
+//
+// Vars
+//
 // Define the dimensions at which the layout will change,
 // adapting to different screen sizes, for use in media queries.
 //
-//		>> xs = xtra small
+//		>> xs = extra small
 //		>> sm = small
 //		>> md = medium
 //		>> lg = large
@@ -19,7 +22,10 @@ $layout-breakpoints: (
 );
 
 //
+// Mixins
+//
 // Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Uses ``min-width``
 // Makes the @content apply to the given breakpoint and wider.
 @mixin media-breakpoint($name, $breakpoints: $layout-breakpoints) {
 	$min: map-get($breakpoints, $name);
@@ -32,7 +38,8 @@ $layout-breakpoints: (
 		@content;
 	}
 }
-
+//
+// Similar but uses ``max-width``
 @mixin media-breakpoint-max($name, $breakpoints: $layout-breakpoints) {
 	$next: next-map-item($name, map-keys($breakpoints));
 	$max: map-get($breakpoints, $next);

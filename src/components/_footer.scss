@@ -1,7 +1,16 @@
+//
+// Footer
+//
+
+//
+// Vars
 $page-foot-min-height: 50px;
 $page-foot-margin-top: 1rem;
 $page-foot-padding-top: 1rem;
 
+//
+// Css classes and elements
+/*! Footer Component */
 .page-footer {
 	min-height: $page-foot-min-height;
 	@include rem-px(padding-top, $page-foot-padding-top);

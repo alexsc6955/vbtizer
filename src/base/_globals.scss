@@ -1,4 +1,8 @@
 //
+// Globals
+//
+
+//
 // Variables
 //
 
@@ -88,7 +92,8 @@ $enable-ie-support: true;
 $enable-rounded: true;
 $enable-box-shadow: true;
 
-
+//
+// Funcotions
 //
 // returns the unit as an int
 @function parseInt($n) {

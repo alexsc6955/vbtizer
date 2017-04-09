@@ -1,4 +1,9 @@
-// Fonts
+//
+// Typography
+//
+
+//
+// Vars
 //
 // Headings
 $headings-font-sizes: (
@@ -23,6 +28,8 @@ $hr-border-color: rgba($black,.1);
 $hr-border-style: solid;
 $hr-border-width: 2px;
 
+//
+// Paragrpah
 $paragrph-color: $body-color;
 
 $lead-font-size: 1.25rem;
@@ -35,13 +42,19 @@ $lead-font-sizes: (
 );
 $lead-font-weight: 300;
 
+//
+// Emphasis
 $small-font-size: 80%;
 
 $mark-padding: .1rem;
 $mark-bg: #fcf8e3;
 
+//
+// Lists
 $list-inline-gap: .3125rem;
 
+//
+// Blockquotes
 $blockquote-small-color: $gray-light;
 $blockquote-font-sizes: (
 	xs: (map-get($font-sizes, xs) * 1.25),
@@ -53,6 +66,10 @@ $blockquote-font-sizes: (
 $blockquote-border-color: $gray-lighter;
 $blockquote-border-width: .25rem;
 
+//
+// Mixins
+//
+// Asigin its respective style to each heading element
 @mixin make-headings($font-sizes: $headings-font-sizes) {
 	%headings {
 		@include rem-px(margin-bottom, $headings-margin-bottom);
@@ -75,14 +92,21 @@ $blockquote-border-width: .25rem;
 		}
 	}
 }
-
+//
+// Remove list style
 @mixin list-unstyled() {
 	padding-left: 0;
 	list-style: none;
 }
 
+//
+// Css classes and elements
+/*! Typography */
+//
+// Make headings from h1 to h6
 @include make-headings;
-
+//
+// Hr
 hr {
 	margin: {
 		@include rem-px(top, $hr-spaces);
@@ -92,11 +116,15 @@ hr {
 		top: $hr-border-width $hr-border-style $hr-border-color
 	}
 }
-
+//
+// Paragrph
+//
+// Asign color
 p {
 	color: $paragrph-color;
 }
-
+//
+// Change fontsize for each brakpoint
 .lead {
 	@each $breakpoint, $size in $lead-font-sizes {
 		@include media-breakpoint($breakpoint) {
@@ -105,7 +133,10 @@ p {
 	}
 	font-weight: $lead-font-weight;
 }
-
+//
+// Emphasis
+//
+// Small
 small,
 .small {
 	font: {
@@ -113,17 +144,22 @@ small,
 		weight: $font-weight-normal;
 	}
 }
-
+//
+// mark
 mark,
 .mark {
 	@include rem-px(padding, $mark-padding);
 	background-color: $mark-bg;
 }
-
+//
+// Lists
+//
+// Unstyled
 .list-unstyled {
 	@include list-unstyled;
 }
-
+//
+// inline
 .list-inline {
 	@include list-unstyled;
 	> li {
@@ -133,13 +169,17 @@ mark,
 		}
 	}
 }
-
+//
+// Mic
+//
+// Abbr and initialism
 abbr,
 .initialism {
 	font-size: 90%;
 	text-transform: uppercase;
 }
-
+//
+// Blockquotes
 blockquote,
 .blockquote {
 	@include rem-px(padding, .5rem, 1rem);

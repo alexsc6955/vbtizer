@@ -20,6 +20,8 @@ body {
 		family: $font-family-base;
 		weight: $font-weight-base;
 	}
+	//
+	// Font size for each breakpoint
 	@each $brakepoint, $font-size in $font-sizes {
 		@include media-breakpoint($brakepoint) {
 			@include rem-px(font-size, $font-size);

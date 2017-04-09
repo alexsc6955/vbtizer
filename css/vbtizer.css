@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.5.11
+ * Vbtizer v0.5.12
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -344,7 +344,7 @@ form {
   form textarea {
     resize: vertical; }
 
-/*! Grid */
+/*! Grid System */
 .container {
   margin: 0 auto;
   overflow: hidden;
@@ -835,6 +835,7 @@ form {
 
   .offset-col-xl-11 {
     margin-left: 91.66667%; } }
+/*! Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
@@ -983,6 +984,7 @@ blockquote,
     .blockquote .blockquote-footer::before {
       content: "\2014 \00A0"; }
 
+/*! Code */
 code,
 kbd,
 pre,
@@ -1043,16 +1045,19 @@ kbd {
     -webkit-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25);
     -moz-box-shadow: inset 0 -0.1rem 0 rgba(16, 16, 16, 0.25); }
 
+/*! Responsive Images */
 .img-fluid {
   max-width: 100%;
   height: auto; }
 
+/*! Floats Utility */
 .float-left {
   float: left !important; }
 
 .float-right {
   float: right !important; }
 
+/*! Header Componet */
 .page-header {
   min-height: 50px;
   margin-bottom: 16px;
@@ -1061,6 +1066,7 @@ kbd {
   padding-top: 2rem;
   border-bottom: 2px solid #dddddd; }
 
+/*! Footer Component */
 .page-footer {
   min-height: 50px;
   padding-top: 16px;
@@ -1069,6 +1075,7 @@ kbd {
   margin-top: 1rem;
   border-top: 2px solid #dddddd; }
 
+/*! Navbar Component */
 .navbar {
   position: relative;
   margin-bottom: .5rem;
