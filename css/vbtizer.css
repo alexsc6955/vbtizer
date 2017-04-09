@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.5.9
+ * Vbtizer v0.5.11
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1077,13 +1077,15 @@ kbd {
   border-bottom: 1px solid transparent;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-clip: padding-box;
-  overflow: hidden; }
+  background-clip: padding-box; }
+  .navbar::after {
+    display: block;
+    content: "";
+    clear: both; }
   .navbar .nav {
     padding-left: 0;
     list-style: none;
-    margin: 0 -1rem;
-    overflow: hidden; }
+    margin: 0 -1rem; }
     .navbar .nav > li {
       margin: 0;
       display: inline-block;

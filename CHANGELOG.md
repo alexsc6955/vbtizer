@@ -144,4 +144,13 @@
 	- ``float: left;`` added to the ``<h1>`` tag.
 	- Impruved ``.navbar`` spaces
 - Floats utilities added.
-	- ``float-left`` nad ``float-right``, and ``.float-left`` and ``float-right`` classes
+	- ``float-left`` and ``float-right`` mixins, and ``.float-left`` and ``float-right`` classes
+
+## v-0.5.11
+
+**Changes**
+
+- Clearfix utilitiy added.
+	- ``clearfix`` mixin, and ``.clearfix`` class to clean floats.
+- Navbar component impruvment.
+	- ``clearfix`` mixin added to ``.navbar`` to clean floats instead of ``overflow: hidden;``

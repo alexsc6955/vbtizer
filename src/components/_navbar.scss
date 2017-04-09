@@ -5,11 +5,10 @@
 	padding-left: 1rem;
 	border-bottom: 1px solid transparent;
 	@include border-radius(5px);
-	overflow: hidden;
+	@include clearfix;
 	.nav {
 		@include list-unstyled;
 		margin: 0 -1rem;
-		overflow: hidden;
 		> li {
 			margin: 0;
 			display: inline-block;
