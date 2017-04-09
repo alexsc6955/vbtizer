@@ -123,3 +123,14 @@
 - ``.navbar`` ``margin-bottom`` changed to ``.5rem`` default.
 - ``page-footer`` ``margin-top`` added.
 - ``page-header`` ``margin-bottom`` changed to ``1rem`` that is the standar for the layout.
+
+## v-0.5.5
+
+**Changes**
+
+- Navbar component impruvment.
+	- ``.navbar-light`` class added.
+	- ``.navbar-inverse`` class added.
+	- ``.nav`` class added.
+	- ``.navbar-brand`` class added.
+	- ``.navbar-text`` class added.

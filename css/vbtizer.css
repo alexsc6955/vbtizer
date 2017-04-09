@@ -1066,14 +1066,67 @@ kbd {
 
 .navbar {
   position: relative;
-  min-height: 50px;
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box; }
   .navbar .nav {
     padding-left: 0;
-    list-style: none; }
+    list-style: none;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    margin: 0;
+    overflow: hidden; }
     .navbar .nav > li {
-      display: inline-block; }
+      margin: 0;
+      display: inline-block;
+      float: left; }
       .navbar .nav > li a {
-        padding: .5rem; }
+        display: block;
+        padding: .625rem; }
+  .navbar .navbar-brand {
+    float: left;
+    font-size: 120%;
+    padding: .5rem 10px; }
+    .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+      background-color: transparent; }
+    .navbar .navbar-brand img {
+      width: auto;
+      max-height: 40px;
+      margin-top: -.5rem;
+      margin-right: 5px; }
+  .navbar .navbar-text {
+    margin: .875rem 0;
+    font-size: 80%;
+    float: left;
+    margin-right: 10px; }
+  .navbar-light {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7; }
+    .navbar-light .navbar-text {
+      color: #999; }
+    .navbar-light a {
+      color: #555; }
+      .navbar-light a:hover, .navbar-light a:focus {
+        color: #3c3c3c;
+        background-color: #eee; }
+      .navbar-light a.active {
+        color: #3c3c3c;
+        background-color: #eee; }
+  .navbar-inverse {
+    background-color: #333;
+    border-color: #eee; }
+    .navbar-inverse .navbar-text {
+      color: #999; }
+    .navbar-inverse a {
+      color: #eee; }
+      .navbar-inverse a:hover, .navbar-inverse a:focus {
+        color: #fafafa;
+        background-color: #222; }
+      .navbar-inverse a.active {
+        color: #fafafa;
+        background-color: #222; }
 
 /*# sourceMappingURL=vbtizer.css.map */

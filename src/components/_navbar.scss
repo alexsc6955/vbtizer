@@ -1,13 +1,76 @@
 .navbar {
 	position: relative;
-	min-height: 50px;
 	margin-bottom: .5rem;
+	border: 1px solid transparent;
+	@include border-radius(5px);
 	.nav {
 		@include list-unstyled;
+		@include border-radius(5px);
+		margin: 0;
+		overflow: hidden;
 		> li {
+			margin: 0;
 			display: inline-block;
+			float: left;
 			a {
-				padding: .5rem;
+				display: block;
+				padding: .625rem;
+			}
+		}
+	}
+	.navbar-brand {
+		float: left;
+		font-size: 120%;
+		padding: .5rem 10px;
+		@include hover-focus {
+			background-color: transparent;
+		}
+		img {
+			width: auto;
+			max-height: 40px;
+			margin-top: -.5rem;
+			margin-right: 5px;
+		}
+	}
+	.navbar-text {
+		margin: .875rem 0;
+		font-size: 80%;
+		float: left;
+		margin-right: 10px;
+	}
+	&-light {
+		background-color: #f8f8f8;
+		border-color: #e7e7e7;
+		.navbar-text {
+			color: $gray-light;
+		}
+		a {
+			color: $gray;
+			@include hover-focus {
+				color: darken($gray, 10%);
+				background-color: $gray-lighter;
+			}
+			&.active {
+				color: darken($gray, 10%);
+				background-color: $gray-lighter;
+			}
+		}
+	}
+	&-inverse {
+		background-color: $brand-inverse;
+		border-color: $gray-lighter;
+		.navbar-text {
+			color: $gray-light;
+		}
+		a {
+			color: $gray-lighter;
+			@include hover-focus {
+				color: $white;
+				background-color: $gray-darker;
+			}
+			&.active {
+				color: $white;
+				background-color: $gray-darker;
 			}
 		}
 	}
