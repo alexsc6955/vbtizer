@@ -1,20 +1,19 @@
 /*!
- * Vbtizer v0.5.1
+ * Vbtizer v0.5.9
  * Copyright 2017
  */
 
 //
 // Vars, functions and mixins
 //
-
 // Global vars and function
 @import 'base/globals';
-
+//
 // Css properties
 @import 'mixins/box-sizing';
 @import 'mixins/border-radius';
 @import 'mixins/box-shadow';
-
+//
 // Core
 @import 'mixins/breakpoints';
 @import 'mixins/states';
@@ -23,22 +22,25 @@
 //
 // Reset
 //
-
-/* Normalize v5 */
+// Normalize v5
 @import 'base/normalize';
+//
+// Vbtizer reset
 @import 'base/reset';
 
 //
 // Layout
-//
 @import 'base/grid';
 @import 'base/typography';
 @import 'base/code';
 @import 'base/images';
 
 //
-// Componenst
+//Utilities
+@import 'mixins/float';
+
 //
+// Componenst
 @import 'components/header';
 @import 'components/footer';
 @import 'components/navbar';

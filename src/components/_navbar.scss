@@ -1,12 +1,14 @@
 .navbar {
 	position: relative;
 	margin-bottom: .5rem;
-	border: 1px solid transparent;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	border-bottom: 1px solid transparent;
 	@include border-radius(5px);
+	overflow: hidden;
 	.nav {
 		@include list-unstyled;
-		@include border-radius(5px);
-		margin: 0;
+		margin: 0 -1rem;
 		overflow: hidden;
 		> li {
 			margin: 0;
@@ -14,14 +16,21 @@
 			float: left;
 			a {
 				display: block;
-				padding: .625rem;
+				padding: .6875rem;
 			}
 		}
+	}
+	h1 {
+		margin: 0;
+		font-size: inherit;
+		line-height: inherit;
+		float: left;
 	}
 	.navbar-brand {
 		float: left;
 		font-size: 120%;
-		padding: .5rem 10px;
+		padding: .5rem 0;
+		margin-right: 1rem;
 		@include hover-focus {
 			background-color: transparent;
 		}
@@ -29,14 +38,14 @@
 			width: auto;
 			max-height: 40px;
 			margin-top: -.5rem;
-			margin-right: 5px;
+			margin-right: .625rem; // 10px
 		}
 	}
 	.navbar-text {
 		margin: .875rem 0;
 		font-size: 80%;
 		float: left;
-		margin-right: 10px;
+		margin-right: 1rem;
 	}
 	&-light {
 		background-color: #f8f8f8;

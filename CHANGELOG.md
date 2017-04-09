@@ -134,3 +134,14 @@
 	- ``.nav`` class added.
 	- ``.navbar-brand`` class added.
 	- ``.navbar-text`` class added.
+
+## v-0.5.9
+
+**Changes**
+
+- Navbar component impruvment.
+	- Now you can add an ``<h1>`` tag as a container for ``.navbar-brand`` without change the spaces and the font size.
+	- ``float: left;`` added to the ``<h1>`` tag.
+	- Impruved ``.navbar`` spaces
+- Floats utilities added.
+	- ``float-left`` nad ``float-right``, and ``.float-left`` and ``float-right`` classes
