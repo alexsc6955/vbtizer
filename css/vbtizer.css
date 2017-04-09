@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.5.12
+ * Vbtizer v0.5.13
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1151,5 +1151,12 @@ kbd {
       .navbar-inverse a.active {
         color: #fafafa;
         background-color: #222; }
+
+.card {
+  position: relative;
+  border: 2px solid #0066ff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box; }
 
 /*# sourceMappingURL=vbtizer.css.map */

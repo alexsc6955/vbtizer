@@ -1,0 +1,5 @@
+.card {
+	position: relative;
+	border: 2px solid $brand-primary;
+	@include border-radius(5px);
+}
