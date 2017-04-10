@@ -13,6 +13,16 @@ html {
 	@include box-sizing(inherit);
 }
 
+html {
+	//
+	// Font size for each breakpoint
+	@each $brakepoint, $font-size in $html-font-sizes {
+		@include media-breakpoint($brakepoint) {
+			font-size: $font-size;
+		}
+	}
+}
+
 //
 // Reset body. Set font styles and colors
 body {
@@ -20,14 +30,7 @@ body {
 		family: $font-family-base;
 		weight: $font-weight-base;
 	}
-	//@include rem-px(font-size, map-get($font-sizes, md));
-	//
-	// Font size for each breakpoint
-	@each $brakepoint, $font-size in $font-sizes {
-		@include media-breakpoint($brakepoint) {
-			font-size: $font-size;
-		}
-	}
+	@include rem-px(font-size, $body-font-size);
 	line-height: $line-height-base;
 	color: $body-color;
 	background-color: $body-bg;
@@ -126,7 +129,7 @@ abbr[title] {
 // add 'margin-bottom', remove 'font-style' and let it get parent 'line-height'
 address {
 	@include rem-px(margin-bottom, $spacer);
-	font-style: normal;
+	font-style: $font-weight-normal;
 	line-height: inherit;
 }
 
@@ -177,7 +180,7 @@ table {
 	//
 	//Reset caption margins, align and side
 	caption {
-		@include rem-px(padding, .75rem 0 .75rem);
+		@include rem-px(padding, ($spacer * .75) 0 ($spacer * .75));
 		text-align: left;
 		caption-side: bottom;
 	}
@@ -210,7 +213,7 @@ form {
 		display: block;
 		width: 100%;
 		padding: 0;
-		@include rem-px(margin-bottom, .5rem);
+		@include rem-px(margin-bottom, ($spacer * 2));
 		@include rem-px(font-size, 1.5rem);
 		line-height: inherit;
 	}
@@ -218,7 +221,7 @@ form {
 	// Allow labels to use 'margin' for spacing.
 	label {
 		display: inline-block;
-		@include rem-px(margin-bottom, .5rem);
+		@include rem-px(margin-bottom, ($spacer / 2));
 	}
 	//
 	// inherit 'line-height'

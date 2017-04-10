@@ -101,8 +101,8 @@ $grid-columns: 12;
 			}
 			// `$columns - 1` because offsetting by the width of an entire row isn't possible
 			@for $i from 1 through ($columns - 1) {
-				@if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-xs-0
-					.offset-col#{$infix}-#{$i} {
+				@if not ($infix == "" and $i == 0) { // Avoid emitting useless .col-xs-offset-0
+					.col#{$infix}-offset-#{$i} {
 						margin-left: percentage($i / $columns);
 					}
 				}
