@@ -31,9 +31,11 @@
 	@if $px == $rem {
 		#{$property}: $px;
 	} @else {
-		@if ($enable-older-browsers-support) or ($enable-ie-support) {
+		@if $enable-px-unit {
 			#{$property}: $px;
 		}
-		#{$property}: $rem;
+		@if $enable-rem-unit {
+			#{$property}: $rem;
+		}
 	}
 }

@@ -174,8 +174,13 @@
 
 - Cards componet started.
 
-## v-0.5.
+## v-0.5.16
 
 **Changes**
 
 - rem System impruvement
+- You can choose if you want to use px, rem or both.
+	- ``$enable-rem-unit`` option added.
+	- ``$enable-px-unit`` option added.
+- Navbar component impruvement.
+	- px and rem support.

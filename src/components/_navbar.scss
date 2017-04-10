@@ -7,16 +7,16 @@
 $navbar-spacer-y: $spacer-y;
 $navbar-spacer-x: $spacer-x;
 
-$navbar-border-width: 1px;
+$navbar-border-width: 0;
 
-$nav-link-padding: .6875rem;
+$nav-link-padding: .75rem;
 
-$navbar-brand-font-size: 1.125rem;
+$navbar-brand-font-size: 1.25rem;
 $navbar-brand-padding-y: .5rem;
-$navbar-brand-img-max-height: 40px;;
-$navbar-brand-img-margin-top: -.5rem;
+$navbar-brand-img-max-height: 1.875rem;
+$navbar-brand-img-margin-top: -.375rem;
 
-$navbar-text-marging-y: .875rem;
+$navbar-text-padding-y: .875rem;
 $navbar-text-font-size: 80%;
 
 $navbar-light-bg: #f8f8f8;
@@ -44,11 +44,11 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 /*! Navbar Component */
 .navbar {
 	position: relative;
-	margin-bottom: .5rem;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	border-bottom: 1px solid transparent;
-	@include border-radius(5px);
+	@include rem-px(margin-bottom, $navbar-spacer-y);
+	@include rem-px(padding-right, $navbar-spacer-x);
+	@include rem-px(padding-left, $navbar-spacer-x);
+	border-bottom: $navbar-border-width solid transparent;
+	@include border-radius($border-radius);
 	@include clearfix; // Avoid floated elements bother.
 	//
 	// Nav
@@ -57,35 +57,40 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 	// link list
 	.nav {
 		@include list-unstyled;
-		margin: 0 -1rem;
+		margin: {
+			top: 0;
+			@include rem-px(right, $navbar-spacer-x);
+			bottom: 0;
+			@include rem-px(left, $navbar-spacer-x);
+		}
 		> li {
 			margin: 0;
 			display: inline-block;
 			float: left;
 			a {
 				display: block;
-				padding: .6875rem;
+				@include rem-px(padding, $nav-link-padding);
 			}
 		}
 	}
 	//
-	// Avoid `<h1` margins makes a mess with the navabr
+	// Avoid `<h1>` margins make a mess with the navabr
 	// because of its default styles
 	//
 	// You can use this as a `.navbar-brand` wrapper.
 	h1 {
 		margin: 0;
 		font-size: inherit;
-		line-height: inherit;
+		line-height: $line-height-base;  // Important. Prevent spaces from bad behave
 		float: left;
 	}
 	//
 	// To add the brand image and the brand title.
 	.navbar-brand {
 		float: left;
-		font-size: 120%;
-		padding: .5rem 0;
-		margin-right: 1rem;
+		@include rem-px(font-size, $navbar-brand-font-size);
+		@include rem-px(padding, $navbar-brand-padding-y 0);
+		@include rem-px(margin-right, $navbar-spacer-x);
 		//
 		// Avoid default background color when hover
 		@include hover-focus {
@@ -96,19 +101,19 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 		// the navbar layout.
 		img {
 			width: auto;
-			max-height: 40px;
-			margin-top: -.5rem;
-			margin-right: .625rem; // 10px
+			@include rem-px(max-height, $navbar-brand-img-max-height);
+			@include rem-px(margin-top, $navbar-brand-img-margin-top);
+			@include rem-px(margin-right, ($navbar-spacer-x / 2));
 		}
 	}
 	//
 	// Center verticaly any text to make them fix with
 	// the layout.
 	.navbar-text {
-		margin: .875rem 0;
-		font-size: 80%;
+		@include rem-px(padding, $navbar-text-padding-y 0);
+		@include rem-px(margin, 0 $navbar-spacer-x 0 0); // Remove any parent margin
+		font-size: $navbar-text-font-size;
 		float: left;
-		margin-right: 1rem;
 	}
 	//
 	// .navbar variants
@@ -149,84 +154,3 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 		}
 	}
 }
-
-//
-// Css classes and elements
-//
-// The navbar container
-/*! Navbar Component */
-/*.navbar {
-	position: relative;
-	margin-bottom: $navbar-spacer-y;
-	padding-right: $navbar-spacer-x;
-	padding-left: $navbar-spacer-x;
-	border-bottom: $navbar-border-width solid transparent;
-	@include border-radius($border-radius);
-	@include clearfix; // Avoid floated elements bother.
-	//
-	// Nav
-	//
-	// use with an unordered list. This will contain the
-	// link list
-	.nav {
-		@include list-unstyled;
-		margin: 0 -$navbar-spacer-x;
-		> li {
-			margin: 0;
-			display: inline-block;
-			float: left;
-			a {
-				display: block;
-				padding: $nav-link-padding;
-			}
-		}
-	}
-	//
-	// Avoid `<h1` margins makes a mess with the navabr
-	// because of its default styles
-	//
-	// You can use this as a `.navbar-brand` wrapper.
-	h1 {
-		margin: 0;
-		font-size: inherit;
-		line-height: inherit;
-		float: left;
-	}
-	//
-	// To add the brand image and the brand title.
-	.navbar-brand {
-		float: left;
-		font-size: $navbar-brand-font-size;
-		padding: $navbar-brand-padding-y 0;
-		margin-right: $navbar-spacer-x;
-		//
-		// Avoid default background color when hover
-		@include hover-focus {
-			background-color: transparent;
-		}
-		//
-		// Rexise its height to 40px to make if fix with
-		// the navbar layout.
-		img {
-			width: auto;
-			max-height: $navbar-brand-img-max-height;
-			margin-top: $navbar-brand-img-margin-top;
-			margin-right: $navbar-spacer-x;
-		}
-	}
-	//
-	// Center verticaly any text to make them fix with
-	// the layout.
-	.navbar-text {
-		margin: {
-			top: $navbar-text-marging-y;
-			bottom: $navbar-text-marging-y;
-			left: 0;
-			right: $navbar-spacer-x;
-		}
-		font-size: $navbar-text-font-size;
-		float: left;
-	}
-	//
-	// .navbar variants
-}*/

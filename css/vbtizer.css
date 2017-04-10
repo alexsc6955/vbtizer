@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v0.5.13
+ * Vbtizer v-0.5.16
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -229,7 +229,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
-  font-size: 1rem;
   line-height: 1.5;
   color: #333;
   background-color: #fafafa; }
@@ -249,20 +248,17 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 7px;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 7px; }
 
 p {
   margin-top: 0;
-  margin-bottom: 14px;
-  margin-bottom: 1rem; }
+  margin-bottom: 14px; }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 14px;
-  margin-bottom: 1rem; }
+  margin-bottom: 14px; }
 
 ol ol,
 ul ul,
@@ -275,31 +271,26 @@ dt {
 
 dd {
   margin-left: 0;
-  margin-bottom: 7px;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 7px; }
 
 abbr[title] {
   cursor: help; }
 
 address {
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit; }
 
 blockquote {
-  margin: 0 0 14px;
-  margin: 0 0 1rem; }
+  margin: 0 0 14px; }
 
 pre {
   margin-top: 0;
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   overflow: auto; }
 
 figure {
-  margin: 0 0 14px;
-  margin: 0 0 1rem; }
+  margin: 0 0 14px; }
 
 img {
   vertical-align: middle; }
@@ -308,7 +299,6 @@ table {
   border-collapse: collapse; }
   table caption {
     padding: 10.5px 0 10.5px;
-    padding: 0.75rem 0 0.75rem;
     text-align: left;
     caption-side: bottom; }
   table th {
@@ -316,8 +306,7 @@ table {
 
 form {
   margin-top: 0;
-  margin-bottom: 14px;
-  margin-bottom: 1rem; }
+  margin-bottom: 14px; }
   form fieldset {
     padding: 0;
     margin: 0;
@@ -327,14 +316,11 @@ form {
     width: 100%;
     padding: 0;
     margin-bottom: 7px;
-    margin-bottom: 0.5rem;
     font-size: 21px;
-    font-size: 1.5rem;
     line-height: inherit; }
   form label {
     display: inline-block;
-    margin-bottom: 7px;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 7px; }
   form input,
   form button,
   form select,
@@ -351,33 +337,23 @@ form {
   margin: 0 auto;
   overflow: hidden;
   padding-right: 14px;
-  padding-right: 1rem;
-  padding-left: 14px;
-  padding-left: 1rem; }
+  padding-left: 14px; }
   @media (min-width: 576px) {
     .container {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 768px) {
     .container {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 992px) {
     .container {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 1200px) {
     .container {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 576px) {
     .container {
       width: 540px;
@@ -399,64 +375,44 @@ form {
   margin: 0 auto;
   overflow: hidden;
   padding-right: 14px;
-  padding-right: 1rem;
-  padding-left: 14px;
-  padding-left: 1rem; }
+  padding-left: 14px; }
   @media (min-width: 576px) {
     .container-fluid {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 768px) {
     .container-fluid {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 992px) {
     .container-fluid {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 1200px) {
     .container-fluid {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
 
 .row {
   overflow: hidden;
   margin-right: -14px;
-  margin-right: -1rem;
-  margin-left: -14px;
-  margin-left: -1rem; }
+  margin-left: -14px; }
   @media (min-width: 576px) {
     .row {
       margin-right: -14px;
-      margin-right: -1rem;
-      margin-left: -14px;
-      margin-left: -1rem; } }
+      margin-left: -14px; } }
   @media (min-width: 768px) {
     .row {
       margin-right: -14px;
-      margin-right: -1rem;
-      margin-left: -14px;
-      margin-left: -1rem; } }
+      margin-left: -14px; } }
   @media (min-width: 992px) {
     .row {
       margin-right: -14px;
-      margin-right: -1rem;
-      margin-left: -14px;
-      margin-left: -1rem; } }
+      margin-left: -14px; } }
   @media (min-width: 1200px) {
     .row {
       margin-right: -14px;
-      margin-right: -1rem;
-      margin-left: -14px;
-      margin-left: -1rem; } }
+      margin-left: -14px; } }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
   position: relative;
@@ -464,33 +420,23 @@ form {
   min-height: 1px;
   float: left;
   padding-right: 14px;
-  padding-right: 1rem;
-  padding-left: 14px;
-  padding-left: 1rem; }
+  padding-left: 14px; }
   @media (min-width: 576px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 768px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 992px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
   @media (min-width: 1200px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
       padding-right: 14px;
-      padding-right: 1rem;
-      padding-left: 14px;
-      padding-left: 1rem; } }
+      padding-left: 14px; } }
 
 .col-1 {
   max-width: 8.33333%; }
@@ -840,7 +786,6 @@ form {
 /*! Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 7px;
-  margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -862,40 +807,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 70%; }
 
 h1, .h1 {
-  font-size: 35px;
-  font-size: 2.5rem; }
+  font-size: 35px; }
 
 h2, .h2 {
-  font-size: 28px;
-  font-size: 2rem; }
+  font-size: 28px; }
 
 h3, .h3 {
-  font-size: 24.5px;
-  font-size: 1.75rem; }
+  font-size: 24.5px; }
 
 h4, .h4 {
-  font-size: 21px;
-  font-size: 1.5rem; }
+  font-size: 21px; }
 
 h5, .h5 {
-  font-size: 17.5px;
-  font-size: 1.25rem; }
+  font-size: 17.5px; }
 
 h6, .h6 {
-  font-size: 14px;
-  font-size: 1rem; }
+  font-size: 14px; }
 
 hr {
   margin-top: 14px;
-  margin-top: 1rem;
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   border: 0;
     border-top: 2px solid rgba(16, 16, 16, 0.1); }
 
 .lead {
   font-size: 17.5px;
-  font-size: 1.25rem;
   font-weight: 300; }
 
 small,
@@ -906,7 +842,6 @@ small,
 mark,
 .mark {
   padding: 1.4px;
-  padding: 0.1rem;
   background-color: #fcf8e3; }
 
 .list-unstyled {
@@ -919,8 +854,7 @@ mark,
   .list-inline > li {
     display: inline-block; }
     .list-inline > li :not(:last-child) {
-      margin-right: 4.375px;
-      margin-right: 0.3125rem; }
+      margin-right: 4.375px; }
 
 abbr,
 .initialism {
@@ -930,13 +864,9 @@ abbr,
 blockquote,
 .blockquote {
   padding: 7px 14px;
-  padding: 0.5rem 1rem;
   margin-top: 14px;
-  margin-top: 1rem;
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   font-size: 15.75px;
-  font-size: 1.125rem;
   border-left: 0.25rem solid #eee; }
   blockquote .blockquote-footer,
   .blockquote .blockquote-footer {
@@ -958,9 +888,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   padding: 14px;
-  padding: 1rem;
   font-size: 90%;
   color: #333;
   background-color: #eee;
@@ -977,7 +905,6 @@ pre {
 
 code {
   padding: 2.8px 5.6px;
-  padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #bd4147;
   background-color: #eee;
@@ -1024,29 +951,25 @@ kbd {
 .page-header {
   min-height: 50px;
   margin-bottom: 14px;
-  margin-bottom: 1rem;
   padding-top: 28px;
-  padding-top: 2rem;
   border-bottom: 2px solid #dddddd; }
 
 /*! Footer Component */
 .page-footer {
   min-height: 50px;
   padding-top: 14px;
-  padding-top: 1rem;
   margin-top: 14px;
-  margin-top: 1rem;
   border-top: 2px solid #dddddd; }
 
 /*! Navbar Component */
 .navbar {
   position: relative;
-  margin-bottom: .5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  border-bottom: 1px solid transparent;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  margin-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-bottom: 0 solid transparent;
+  -webkit-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   background-clip: padding-box; }
   .navbar::after {
     display: block;
@@ -1055,36 +978,39 @@ kbd {
   .navbar .nav {
     padding-left: 0;
     list-style: none;
-    margin: 0 -1rem; }
+    margin-top: 0;
+    margin-right: 14px;
+    margin-bottom: 0;
+    margin-left: 14px; }
     .navbar .nav > li {
       margin: 0;
       display: inline-block;
       float: left; }
       .navbar .nav > li a {
         display: block;
-        padding: .6875rem; }
+        padding: 10.5px; }
   .navbar h1 {
     margin: 0;
     font-size: inherit;
-    line-height: inherit;
+    line-height: 1.5;
     float: left; }
   .navbar .navbar-brand {
     float: left;
-    font-size: 120%;
-    padding: .5rem 0;
-    margin-right: 1rem; }
+    font-size: 17.5px;
+    padding: 7px 0;
+    margin-right: 14px; }
     .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
       background-color: transparent; }
     .navbar .navbar-brand img {
       width: auto;
-      max-height: 40px;
-      margin-top: -.5rem;
-      margin-right: .625rem; }
+      max-height: 26.25px;
+      margin-top: -5.25px;
+      margin-right: 7px; }
   .navbar .navbar-text {
-    margin: .875rem 0;
+    padding: 12.25px 0;
+    margin: 0 14px 0 0;
     font-size: 80%;
-    float: left;
-    margin-right: 1rem; }
+    float: left; }
   .navbar-light {
     background-color: #f8f8f8;
     border-color: #e7e7e7; }
@@ -1112,82 +1038,6 @@ kbd {
         color: #e1e1e1;
         background-color: #222; }
 
-/*! Navbar Component */
-/*.navbar {
-	position: relative;
-	margin-bottom: $navbar-spacer-y;
-	padding-right: $navbar-spacer-x;
-	padding-left: $navbar-spacer-x;
-	border-bottom: $navbar-border-width solid transparent;
-	@include border-radius($border-radius);
-	@include clearfix; // Avoid floated elements bother.
-	//
-	// Nav
-	//
-	// use with an unordered list. This will contain the
-	// link list
-	.nav {
-		@include list-unstyled;
-		margin: 0 -$navbar-spacer-x;
-		> li {
-			margin: 0;
-			display: inline-block;
-			float: left;
-			a {
-				display: block;
-				padding: $nav-link-padding;
-			}
-		}
-	}
-	//
-	// Avoid `<h1` margins makes a mess with the navabr
-	// because of its default styles
-	//
-	// You can use this as a `.navbar-brand` wrapper.
-	h1 {
-		margin: 0;
-		font-size: inherit;
-		line-height: inherit;
-		float: left;
-	}
-	//
-	// To add the brand image and the brand title.
-	.navbar-brand {
-		float: left;
-		font-size: $navbar-brand-font-size;
-		padding: $navbar-brand-padding-y 0;
-		margin-right: $navbar-spacer-x;
-		//
-		// Avoid default background color when hover
-		@include hover-focus {
-			background-color: transparent;
-		}
-		//
-		// Rexise its height to 40px to make if fix with
-		// the navbar layout.
-		img {
-			width: auto;
-			max-height: $navbar-brand-img-max-height;
-			margin-top: $navbar-brand-img-margin-top;
-			margin-right: $navbar-spacer-x;
-		}
-	}
-	//
-	// Center verticaly any text to make them fix with
-	// the layout.
-	.navbar-text {
-		margin: {
-			top: $navbar-text-marging-y;
-			bottom: $navbar-text-marging-y;
-			left: 0;
-			right: $navbar-spacer-x;
-		}
-		font-size: $navbar-text-font-size;
-		float: left;
-	}
-	//
-	// .navbar variants
-}*/
 .card {
   position: relative;
   border: 2px solid #0066ff;
