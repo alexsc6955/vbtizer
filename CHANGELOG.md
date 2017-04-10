@@ -178,7 +178,7 @@
 
 **Changes**
 
-- rem System impruvement
+- rem System impruvement.
 - You can choose if you want to use px, rem or both.
 	- ``$enable-rem-unit`` option added.
 	- ``$enable-px-unit`` option added.

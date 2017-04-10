@@ -47,8 +47,9 @@ sass --style compressed vbtizer.scss:[your css file path]
 - ``box-sizing`` mixin to use vendor prefix if older borowser support is enable
 - Layout breakpoints mixin.
 - Use ``rem`` and ``px`` with the same property for older browsers and ie support.
-- Normalize v5
+- Normalize v5.
 - Reset Css.
-- Grid System
-- Typography Styles
-- Code Styles
+- Grid System.
+- Typography Styles.
+- Code Styles.
+- Navbar Component.
