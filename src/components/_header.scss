@@ -5,7 +5,6 @@
 //
 // Vars
 $page-head-min-height: 50px;
-$page-head-margin-bottom: 1rem;
 $page-head-padding-top: 2rem;
 
 //
@@ -13,7 +12,7 @@ $page-head-padding-top: 2rem;
 /*! Header Componet */
 .page-header {
 	min-height: $page-head-min-height;
-	@include rem-px(margin-bottom, $page-head-margin-bottom);
+	@include rem-px(margin-bottom, $spacer-y);
 	@include rem-px(padding-top, $page-head-padding-top);
 	border-bottom: 2px solid $silver;
 }

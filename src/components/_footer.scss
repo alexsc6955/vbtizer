@@ -5,7 +5,6 @@
 //
 // Vars
 $page-foot-min-height: 50px;
-$page-foot-margin-top: 1rem;
 $page-foot-padding-top: 1rem;
 
 //
@@ -13,7 +12,7 @@ $page-foot-padding-top: 1rem;
 /*! Footer Component */
 .page-footer {
 	min-height: $page-foot-min-height;
-	@include rem-px(padding-top, $page-foot-padding-top);
-	@include rem-px(margin-top, $page-foot-margin-top);
+	@include rem-px(padding-top, $spacer-y);
+	@include rem-px(margin-top, $spacer-y);
 	border-top: 2px solid $silver;
 }

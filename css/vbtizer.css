@@ -326,8 +326,8 @@ form {
     display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: 28px;
-    margin-bottom: 2rem;
+    margin-bottom: 7px;
+    margin-bottom: 0.5rem;
     font-size: 21px;
     font-size: 1.5rem;
     line-height: inherit; }
@@ -350,34 +350,34 @@ form {
 .container {
   margin: 0 auto;
   overflow: hidden;
-  padding-right: 15px;
-  padding-right: 1.07143rem;
-  padding-left: 15px;
-  padding-left: 1.07143rem; }
+  padding-right: 14px;
+  padding-right: 1rem;
+  padding-left: 14px;
+  padding-left: 1rem; }
   @media (min-width: 576px) {
     .container {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 768px) {
     .container {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 992px) {
     .container {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .container {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 576px) {
     .container {
       width: 540px;
@@ -398,99 +398,99 @@ form {
 .container-fluid {
   margin: 0 auto;
   overflow: hidden;
-  padding-right: 15px;
-  padding-right: 1.07143rem;
-  padding-left: 15px;
-  padding-left: 1.07143rem; }
+  padding-right: 14px;
+  padding-right: 1rem;
+  padding-left: 14px;
+  padding-left: 1rem; }
   @media (min-width: 576px) {
     .container-fluid {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 768px) {
     .container-fluid {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 992px) {
     .container-fluid {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .container-fluid {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
 
 .row {
   overflow: hidden;
-  margin-right: -15px;
-  margin-right: -1.07143rem;
-  margin-left: -15px;
-  margin-left: -1.07143rem; }
+  margin-right: -14px;
+  margin-right: -1rem;
+  margin-left: -14px;
+  margin-left: -1rem; }
   @media (min-width: 576px) {
     .row {
-      margin-right: -15px;
-      margin-right: -1.07143rem;
-      margin-left: -15px;
-      margin-left: -1.07143rem; } }
+      margin-right: -14px;
+      margin-right: -1rem;
+      margin-left: -14px;
+      margin-left: -1rem; } }
   @media (min-width: 768px) {
     .row {
-      margin-right: -15px;
-      margin-right: -1.07143rem;
-      margin-left: -15px;
-      margin-left: -1.07143rem; } }
+      margin-right: -14px;
+      margin-right: -1rem;
+      margin-left: -14px;
+      margin-left: -1rem; } }
   @media (min-width: 992px) {
     .row {
-      margin-right: -15px;
-      margin-right: -1.07143rem;
-      margin-left: -15px;
-      margin-left: -1.07143rem; } }
+      margin-right: -14px;
+      margin-right: -1rem;
+      margin-left: -14px;
+      margin-left: -1rem; } }
   @media (min-width: 1200px) {
     .row {
-      margin-right: -15px;
-      margin-right: -1.07143rem;
-      margin-left: -15px;
-      margin-left: -1.07143rem; } }
+      margin-right: -14px;
+      margin-right: -1rem;
+      margin-left: -14px;
+      margin-left: -1rem; } }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
   position: relative;
   width: 100%;
   min-height: 1px;
   float: left;
-  padding-right: 15px;
-  padding-right: 1.07143rem;
-  padding-left: 15px;
-  padding-left: 1.07143rem; }
+  padding-right: 14px;
+  padding-right: 1rem;
+  padding-left: 14px;
+  padding-left: 1rem; }
   @media (min-width: 576px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 768px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 992px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 15px;
-      padding-right: 1.07143rem;
-      padding-left: 15px;
-      padding-left: 1.07143rem; } }
+      padding-right: 14px;
+      padding-right: 1rem;
+      padding-left: 14px;
+      padding-left: 1rem; } }
 
 .col-1 {
   max-width: 8.33333%; }
@@ -893,29 +893,10 @@ hr {
   border: 0;
     border-top: 2px solid rgba(16, 16, 16, 0.1); }
 
-p {
-  color: #333; }
-
 .lead {
-  font-size: 12.25px;
-  font-size: 0.875rem;
+  font-size: 17.5px;
+  font-size: 1.25rem;
   font-weight: 300; }
-  @media (min-width: 576px) {
-    .lead {
-      font-size: 14px;
-      font-size: 1rem; } }
-  @media (min-width: 768px) {
-    .lead {
-      font-size: 15.75px;
-      font-size: 1.125rem; } }
-  @media (min-width: 992px) {
-    .lead {
-      font-size: 17.5px;
-      font-size: 1.25rem; } }
-  @media (min-width: 1200px) {
-    .lead {
-      font-size: 21px;
-      font-size: 1.5rem; } }
 
 small,
 .small {
@@ -954,8 +935,8 @@ blockquote,
   margin-top: 1rem;
   margin-bottom: 14px;
   margin-bottom: 1rem;
-  font-size: 17.5px;
-  font-size: 1.25rem;
+  font-size: 15.75px;
+  font-size: 1.125rem;
   border-left: 0.25rem solid #eee; }
   blockquote .blockquote-footer,
   .blockquote .blockquote-footer {
@@ -1115,7 +1096,7 @@ kbd {
         color: #3c3c3c;
         background-color: #eee; }
       .navbar-light a.active {
-        color: #3c3c3c;
+        color: #222222;
         background-color: #eee; }
   .navbar-inverse {
     background-color: #333;
@@ -1128,9 +1109,85 @@ kbd {
         color: #fafafa;
         background-color: #222; }
       .navbar-inverse a.active {
-        color: #fafafa;
+        color: #e1e1e1;
         background-color: #222; }
 
+/*! Navbar Component */
+/*.navbar {
+	position: relative;
+	margin-bottom: $navbar-spacer-y;
+	padding-right: $navbar-spacer-x;
+	padding-left: $navbar-spacer-x;
+	border-bottom: $navbar-border-width solid transparent;
+	@include border-radius($border-radius);
+	@include clearfix; // Avoid floated elements bother.
+	//
+	// Nav
+	//
+	// use with an unordered list. This will contain the
+	// link list
+	.nav {
+		@include list-unstyled;
+		margin: 0 -$navbar-spacer-x;
+		> li {
+			margin: 0;
+			display: inline-block;
+			float: left;
+			a {
+				display: block;
+				padding: $nav-link-padding;
+			}
+		}
+	}
+	//
+	// Avoid `<h1` margins makes a mess with the navabr
+	// because of its default styles
+	//
+	// You can use this as a `.navbar-brand` wrapper.
+	h1 {
+		margin: 0;
+		font-size: inherit;
+		line-height: inherit;
+		float: left;
+	}
+	//
+	// To add the brand image and the brand title.
+	.navbar-brand {
+		float: left;
+		font-size: $navbar-brand-font-size;
+		padding: $navbar-brand-padding-y 0;
+		margin-right: $navbar-spacer-x;
+		//
+		// Avoid default background color when hover
+		@include hover-focus {
+			background-color: transparent;
+		}
+		//
+		// Rexise its height to 40px to make if fix with
+		// the navbar layout.
+		img {
+			width: auto;
+			max-height: $navbar-brand-img-max-height;
+			margin-top: $navbar-brand-img-margin-top;
+			margin-right: $navbar-spacer-x;
+		}
+	}
+	//
+	// Center verticaly any text to make them fix with
+	// the layout.
+	.navbar-text {
+		margin: {
+			top: $navbar-text-marging-y;
+			bottom: $navbar-text-marging-y;
+			left: 0;
+			right: $navbar-spacer-x;
+		}
+		font-size: $navbar-text-font-size;
+		float: left;
+	}
+	//
+	// .navbar variants
+}*/
 .card {
   position: relative;
   border: 2px solid #0066ff;

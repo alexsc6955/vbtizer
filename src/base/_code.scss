@@ -40,9 +40,9 @@ pre {
 	display: block;
 	margin: {
 		top: 0;
-		@include rem-px(bottom, 1rem);
+		@include rem-px(bottom, $spacer-y);
 	}
-	@include rem-px(padding, 1rem);
+	@include rem-px(padding, $spacer-y);
 	font-size: $code-font-size;
 	color: $pre-color;
 	background-color: $pre-bg;

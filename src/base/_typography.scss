@@ -15,7 +15,7 @@ $headings-font-sizes: (
 	6: 1rem
 );
 
-$headings-margin-bottom: .5rem;
+$headings-margin-bottom: ($spacer-y / 2);
 $headings-font-family: inherit ;
 $headings-font-weight: 500;
 $headings-line-height: 1.1;
@@ -23,23 +23,14 @@ $headings-color: inherit;
 $headings-small-color: $gray-light;
 $headings-small-font-size: 70%;
 
-$hr-spaces: 1rem;
+$hr-spaces: $spacer;
 $hr-border-color: rgba($black,.1);
 $hr-border-style: solid;
 $hr-border-width: 2px;
 
 //
 // Paragrpah
-$paragrph-color: $body-color;
-
 $lead-font-size: 1.25rem;
-$lead-font-sizes: (
-	xs: .875rem,
-	sm: 1rem,
-	md: 1.125rem,
-	lg: 1.25rem,
-	xl: 1.5rem
-);
 $lead-font-weight: 300;
 
 //
@@ -56,7 +47,7 @@ $list-inline-gap: .3125rem;
 //
 // Blockquotes
 $blockquote-small-color: $gray-light;
-$blockquote-font-size:  1.25rem;
+$blockquote-font-size:  1.125rem;
 $blockquote-border-color: $gray-lighter;
 $blockquote-border-width: .25rem;
 
@@ -113,18 +104,9 @@ hr {
 //
 // Paragrph
 //
-// Asign color
-p {
-	color: $paragrph-color;
-}
-//
 // Change fontsize for each brakpoint
 .lead {
-	@each $breakpoint, $size in $lead-font-sizes {
-		@include media-breakpoint($breakpoint) {
-			@include rem-px(font-size, $size);
-		}
-	}
+	@include rem-px(font-size, $lead-font-size);
 	font-weight: $lead-font-weight;
 }
 //
@@ -176,10 +158,10 @@ abbr,
 // Blockquotes
 blockquote,
 .blockquote {
-	@include rem-px(padding, ($spacer / 2) $spacer);
+	@include rem-px(padding, ($spacer-y / 2) $spacer-x);
 	margin: {
-		@include rem-px(top, $spacer);
-		@include rem-px(bottom, $spacer);
+		@include rem-px(top, $spacer-y);
+		@include rem-px(bottom, $spacer-y);
 	}
 	@include rem-px(font-size, $blockquote-font-size);
 	border-left: $blockquote-border-width solid $blockquote-border-color;

@@ -3,7 +3,7 @@
 //
 
 //
-// Funcotions
+// Vars and Funcotions
 //
 // returns the unit as an int
 @function parseInt($n) {
@@ -25,8 +25,6 @@ $pixel-base: 14px;
 	@return (parseInt($unit) * parseInt($base) + px);
 }
 
-//
-// Vars
 //
 // Accent Colors
 $silver: #dddddd;
@@ -64,22 +62,6 @@ $brand-danger: $red;
 $brand-inverse: $gray-dark;
 
 //
-// Fonts
-//
-// Font families
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Menlo, Monaco, "Courier New", monospace;
-
-$font-family-base: $font-family-sans-serif;
-
-$font-weight-normal: normal;
-$font-weight-bold: bold;
-
-$font-weight-base: $font-weight-normal;
-$line-height-base: 1.5;
-
-//
 // Html
 $html-font-sizes: (
 	xs: ($pixel-base - 6),
@@ -105,7 +87,27 @@ $link-decoration: none;
 $link-hover-color: darken($link-color, 20%);
 $link-hover-decoration: underline;
 
+//
+// Fonts
+//
+// Font families
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, "Courier New", monospace;
+
+$font-family-base: $font-family-sans-serif;
+
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+//
+// Spaces
 $spacer: 1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
 
 //
 // Boreder radius

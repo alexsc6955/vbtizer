@@ -3,6 +3,41 @@
 //
 
 //
+// Vars
+$navbar-spacer-y: $spacer-y;
+$navbar-spacer-x: $spacer-x;
+
+$navbar-border-width: 1px;
+
+$nav-link-padding: .6875rem;
+
+$navbar-brand-font-size: 1.125rem;
+$navbar-brand-padding-y: .5rem;
+$navbar-brand-img-max-height: 40px;;
+$navbar-brand-img-margin-top: -.5rem;
+
+$navbar-text-marging-y: .875rem;
+$navbar-text-font-size: 80%;
+
+$navbar-light-bg: #f8f8f8;
+$navbar-light-border-color: #e7e7e7;
+$navbar-light-text-color: $gray-light;
+$navbar-light-link-color: $gray;
+$navbar-light-link-hover-color: darken($navbar-light-link-color, 10%);
+$navbar-light-link-hover-bg: $gray-lighter;
+$navbar-light-link-active-color: darken($navbar-light-link-hover-color, 10%);
+$navbar-light-link-hover-bg: $navbar-light-link-hover-bg;
+
+$navbar-inverse-bg: $brand-inverse;
+$navbar-inverse-border-color: $gray-lighter;
+$navbar-inverse-text-color: $gray-light;
+$navbar-inverse-link-color: $gray-lighter;
+$navbar-inverse-link-hover-color: $white;
+$navbar-inverse-link-hover-bg: $gray-darker;
+$navbar-inverse-link-active-color: darken($navbar-inverse-link-hover-color, 10%);
+$navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
+
+//
 // Css classes and elements
 //
 // The navbar container
@@ -78,39 +113,120 @@
 	//
 	// .navbar variants
 	&-light {
-		background-color: #f8f8f8;
-		border-color: #e7e7e7;
+		background-color: $navbar-light-bg;
+		border-color: $navbar-light-border-color;
 		.navbar-text {
-			color: $gray-light;
+			color: $navbar-light-text-color;
 		}
 		a {
-			color: $gray;
+			color: $navbar-light-link-color;
 			@include hover-focus {
-				color: darken($gray, 10%);
-				background-color: $gray-lighter;
+				color: $navbar-light-link-hover-color;
+				background-color: $navbar-light-link-hover-bg;
 			}
 			&.active {
-				color: darken($gray, 10%);
-				background-color: $gray-lighter;
+				color: $navbar-light-link-active-color;
+				background-color: $navbar-light-link-hover-bg;
 			}
 		}
 	}
 	&-inverse {
-		background-color: $brand-inverse;
-		border-color: $gray-lighter;
+		background-color: $navbar-inverse-bg;
+		border-color: $navbar-inverse-border-color;
 		.navbar-text {
-			color: $gray-light;
+			color: $navbar-inverse-text-color;
 		}
 		a {
-			color: $gray-lighter;
+			color: $navbar-inverse-link-color;
 			@include hover-focus {
-				color: $white;
-				background-color: $gray-darker;
+				color: $navbar-inverse-link-hover-color;
+				background-color: $navbar-inverse-link-hover-bg;
 			}
 			&.active {
-				color: $white;
-				background-color: $gray-darker;
+				color: $navbar-inverse-link-active-color;
+				background-color: $navbar-inverse-link-hover-bg;
 			}
 		}
 	}
 }
+
+//
+// Css classes and elements
+//
+// The navbar container
+/*! Navbar Component */
+/*.navbar {
+	position: relative;
+	margin-bottom: $navbar-spacer-y;
+	padding-right: $navbar-spacer-x;
+	padding-left: $navbar-spacer-x;
+	border-bottom: $navbar-border-width solid transparent;
+	@include border-radius($border-radius);
+	@include clearfix; // Avoid floated elements bother.
+	//
+	// Nav
+	//
+	// use with an unordered list. This will contain the
+	// link list
+	.nav {
+		@include list-unstyled;
+		margin: 0 -$navbar-spacer-x;
+		> li {
+			margin: 0;
+			display: inline-block;
+			float: left;
+			a {
+				display: block;
+				padding: $nav-link-padding;
+			}
+		}
+	}
+	//
+	// Avoid `<h1` margins makes a mess with the navabr
+	// because of its default styles
+	//
+	// You can use this as a `.navbar-brand` wrapper.
+	h1 {
+		margin: 0;
+		font-size: inherit;
+		line-height: inherit;
+		float: left;
+	}
+	//
+	// To add the brand image and the brand title.
+	.navbar-brand {
+		float: left;
+		font-size: $navbar-brand-font-size;
+		padding: $navbar-brand-padding-y 0;
+		margin-right: $navbar-spacer-x;
+		//
+		// Avoid default background color when hover
+		@include hover-focus {
+			background-color: transparent;
+		}
+		//
+		// Rexise its height to 40px to make if fix with
+		// the navbar layout.
+		img {
+			width: auto;
+			max-height: $navbar-brand-img-max-height;
+			margin-top: $navbar-brand-img-margin-top;
+			margin-right: $navbar-spacer-x;
+		}
+	}
+	//
+	// Center verticaly any text to make them fix with
+	// the layout.
+	.navbar-text {
+		margin: {
+			top: $navbar-text-marging-y;
+			bottom: $navbar-text-marging-y;
+			left: 0;
+			right: $navbar-spacer-x;
+		}
+		font-size: $navbar-text-font-size;
+		float: left;
+	}
+	//
+	// .navbar variants
+}*/
