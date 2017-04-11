@@ -184,3 +184,9 @@
 	- ``$enable-px-unit`` option added.
 - Navbar component impruvement.
 	- px and rem support.
+
+## v-0.6.0
+
+**Changes**
+
+- VbtIcons added.
