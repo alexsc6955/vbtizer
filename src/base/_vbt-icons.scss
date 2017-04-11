@@ -1,0 +1,202 @@
+//
+// Vbt-icons
+//
+
+//
+// Vars
+//
+// Font
+$vi-font-family: "VbtIcons";
+$vi-file-name: "vbt-icons";
+$vi-src: "../fonts/";
+$vi-font-formats: (
+	eot: "embedded-opentype",
+	"woff2": "woff2",
+	woff: "woff",
+	ttf: "truetype",
+	svg: "svg"
+);
+$vi-svg-id: "vbt-icons";
+$vi-font-weight: $font-weight-normal;
+$vi-font-style: normal;
+
+@font-face {
+	font-family: $vi-font-family;
+	src: url($vi-src + $vi-file-name + '.eot');
+	src: url($vi-src + $vi-file-name + '.eot') format(map-get($vi-font-formats, eot)), url($vi-src + $vi-file-name + '.woff2') format(map-get($vi-font-formats, 'woff2')), url($vi-src + $vi-file-name + '.woff') format(map-get($vi-font-formats, woff)), url($vi-src + $vi-file-name + '.ttf') format(map-get($vi-font-formats, ttf)), url($vi-src + $vi-file-name + '.svg#' + $vi-svg-id) format(map-get($vi-font-formats, svg));
+	font-weight: $vi-font-weight;
+	font-style: $vi-font-style;
+}
+
+.vi {
+	display: inline-block;
+	font: normal normal normal 14px/1.5 VbtIcons; // style, variant, weight, size/line height, family
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.vi-creative-common:before {
+	content: "\e900";
+}
+
+.vi-caret-up:before {
+	content: "\e901";
+}
+
+.vi-caret-down:before {
+	content: "\e902";
+}
+
+.vi-caret-right:before {
+	content: "\e903";
+}
+
+.vi-caret-left:before {
+	content: "\e904";
+}
+
+.vi-chevron-up:before {
+	content: "\e905";
+}
+
+.vi-chevron-down:before {
+	content: "\e906";
+}
+
+.vi-chevron-right:before {
+	content: "\e907";
+}
+
+.vi-chevron-left:before {
+	content: "\e908";
+}
+
+.vi-time:before {
+	content: "\e909";
+}
+
+.vi-user:before {
+	content: "\e90a";
+}
+
+.vi-folder:before {
+	content: "\e90b";
+}
+
+.vi-folder-open:before {
+	content: "\e90c";
+}
+
+.vi-tag:before {
+	content: "\e90d";
+}
+
+.vi-tags:before {
+	content: "\e90e";
+}
+
+.vi-comment-2:before {
+	content: "\e90f";
+}
+
+.vi-comment:before {
+	content: "\e910";
+}
+
+.vi-chat-2:before {
+	content: "\e911";
+}
+
+.vi-chat:before {
+	content: "\e912";
+}
+
+.vi-bubble-2:before {
+	content: "\e913";
+}
+
+.vi-bubble:before {
+	content: "\e914";
+}
+
+.vi-bubbles-2:before {
+	content: "\e915";
+}
+
+.vi-bubbles:before {
+	content: "\e916";
+}
+
+.vi-happy:before {
+	content: "\e917";
+}
+
+.vi-smile:before {
+	content: "\e918";
+}
+
+.vi-tongue:before {
+	content: "\e919";
+}
+
+.vi-sad:before {
+	content: "\e91a";
+}
+
+.vi-wink:before {
+	content: "\e91b";
+}
+
+.vi-grin:before {
+	content: "\e91c";
+}
+
+.vi-cool:before {
+	content: "\e91d";
+}
+
+.vi-angry:before {
+	content: "\e91e";
+}
+
+.vi-evil:before {
+	content: "\e91f";
+}
+
+.vi-shocked:before {
+	content: "\e920";
+}
+
+.vi-baffled:before {
+	content: "\e921";
+}
+
+.vi-confused:before {
+	content: "\e922";
+}
+
+.vi-neutral:before {
+	content: "\e923";
+}
+
+.vi-hipster:before {
+	content: "\e924";
+}
+
+.vi-wondering:before {
+	content: "\e925";
+}
+
+.vi-sleepy:before {
+	content: "\e926";
+}
+
+.vi-frustrated:before {
+	content: "\e927";
+}
+
+.vi-crying:before {
+	content: "\e928";
+}

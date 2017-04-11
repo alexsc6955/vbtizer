@@ -34,6 +34,7 @@
 // Layout
 @import 'base/grid';
 @import 'base/typography';
+@import 'base/vbt-icons';
 @import 'base/code';
 @import 'base/images';
 
@@ -48,96 +49,3 @@
 @import 'components/footer';
 @import 'components/navbar';
 @import 'components/cards';
-
-@font-face {
-	font-family: 'VbtIcons';
-	src: url('../fonts/font3933.eot');
-	src: url('../fonts/font3933.eot') format('embedded-opentype'), url('../fonts/font3933.woff2') format('woff2'), url('../fonts/font3933.woff') format('woff'), url('../fonts/font3933.ttf') format('truetype'), url('../fonts/font3933.svg#font3933') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.vi {
-	display: inline-block;
-	font: normal normal normal 14px/1 VbtIcons;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.vi-creative-common:before {
-	content: "\e900";
-}
-
-.vi-caret-up:before {
-	content: "\e901";
-}
-
-.vi-caret-down:before {
-	content: "\e902";
-}
-
-.vi-caret-right:before {
-	content: "\e903";
-}
-
-.vi-caret-left:before {
-	content: "\e904";
-}
-
-.vi-chevron-up:before {
-	content: "\e905";
-}
-
-.vi-chevron-down:before {
-	content: "\e906";
-}
-
-.vi-chevron-right:before {
-	content: "\e907";
-}
-
-.vi-chevron-left:before {
-	content: "\e908";
-}
-
-.vi-time:before {
-	content: "\e909";
-}
-
-.vi-user:before {
-	content: "\e90a";
-}
-
-.vi-folder:before {
-	content: "\e90b";
-}
-
-.vi-folder-open:before {
-	content: "\e90c";
-}
-
-.vi-tag:before {
-	content: "\e90d";
-}
-
-.vi-tags:before {
-	content: "\e90e";
-}
-
-.vi-comment-2:before {
-	content: "\e90f";
-}
-
-.vi-comment:before {
-	content: "\e910";
-}
-
-.vi-chat-2:before {
-	content: "\e911";
-}
-
-.vi-chat:before {
-	content: "\e912";
-}
