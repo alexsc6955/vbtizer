@@ -190,3 +190,21 @@
 **Changes**
 
 - VbtIcons added.
+
+## v-0.6.0
+
+**Changes**
+
+- VbtIcons comments added.
+
+## v-0.6.3
+
+**Changes**
+
+- Some features added to ``.card``.
+	``.card-header``
+	``.card-title``
+	``.card-subtitle``
+	``.card-content``
+	``.card-footer``
+- ``center-block`` mixin added

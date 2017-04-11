@@ -1,5 +1,5 @@
 //
-// Responsive image
+// Images styles
 //
 
 //
@@ -10,10 +10,33 @@
 	max-width: 100%;
 	height: auto;
 }
+//
+// Thumbnail style
+@mixin img-thumbnail() {
+	
+}
 
 //
 // Css classes and elements
+// Responsive Imahe
 /*! Responsive Images */
 .img-fluid {
 	@include img-fluid;
+}
+//
+// Thumbnail
+.img-thumbnail {
+	padding: .25rem;
+	border: 1px solid $silver;
+	border-radius: $border-radius-sm;
+}
+//
+// Thumbnail
+.img-rounded {
+	border-radius: $border-radius-lg;
+}
+//
+// Thumbnail
+.img-circle {
+	border-radius: 50%;
 }

@@ -37,10 +37,14 @@ $vi-font-style: normal;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+//
+// Cretive common
 .vi-creative-common:before {
 	content: "\e900";
 }
 
+//
+// Carets
 .vi-caret-up:before {
 	content: "\e901";
 }
@@ -57,6 +61,8 @@ $vi-font-style: normal;
 	content: "\e904";
 }
 
+//
+// Chevrons
 .vi-chevron-up:before {
 	content: "\e905";
 }
@@ -73,14 +79,20 @@ $vi-font-style: normal;
 	content: "\e908";
 }
 
+//
+// Time
 .vi-time:before {
 	content: "\e909";
 }
 
+//
+// User
 .vi-user:before {
 	content: "\e90a";
 }
 
+//
+// Folder
 .vi-folder:before {
 	content: "\e90b";
 }
@@ -89,6 +101,8 @@ $vi-font-style: normal;
 	content: "\e90c";
 }
 
+//
+// Tags
 .vi-tag:before {
 	content: "\e90d";
 }
@@ -97,6 +111,8 @@ $vi-font-style: normal;
 	content: "\e90e";
 }
 
+//
+// Comments
 .vi-comment-2:before {
 	content: "\e90f";
 }
@@ -105,6 +121,8 @@ $vi-font-style: normal;
 	content: "\e910";
 }
 
+//
+// Chat
 .vi-chat-2:before {
 	content: "\e911";
 }
@@ -113,6 +131,8 @@ $vi-font-style: normal;
 	content: "\e912";
 }
 
+//
+// Bubbles
 .vi-bubble-2:before {
 	content: "\e913";
 }
@@ -129,6 +149,8 @@ $vi-font-style: normal;
 	content: "\e916";
 }
 
+//
+// Emoticon
 .vi-happy:before {
 	content: "\e917";
 }

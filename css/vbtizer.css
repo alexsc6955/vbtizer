@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v-0.6.0
+ * Vbtizer v-0.6.3
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1150,12 +1150,27 @@ kbd {
   max-width: 100%;
   height: auto; }
 
+.img-thumbnail {
+  padding: .25rem;
+  border: 1px solid #dddddd;
+  border-radius: 0.2rem; }
+
+.img-rounded {
+  border-radius: 0.3rem; }
+
+.img-circle {
+  border-radius: 50%; }
+
 /*! Floats Utility */
 .float-left {
   float: left !important; }
 
 .float-right {
   float: right !important; }
+
+.center-block {
+  display: block;
+  margin: 0 auto; }
 
 /*! Header Componet */
 .page-header {
@@ -1272,5 +1287,36 @@ kbd {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-clip: padding-box; }
+  .card .card-header {
+    padding: 1rem 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #0066ff; }
+  .card .card-content {
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
+  .card .card-footer {
+    padding: 1rem 1rem;
+    border-top: 1px solid #0066ff; }
+  .card .card-title {
+    margin-bottom: 1rem; }
+  .card .card-subtitle {
+    margin: 0 0 1rem;
+    color: #555; }
+  .card .card-thumbnail-full, .card .card-thumbnail-lg, .card .card-thumbnail-md, .card .card-thumbnail-sm {
+    margin-bottom: 1rem; }
+    .card .card-thumbnail-full img, .card .card-thumbnail-lg img, .card .card-thumbnail-md img, .card .card-thumbnail-sm img {
+      width: 100%;
+      height: auto; }
+  .card .card-thumbnail-full img {
+    width: 100%; }
+  .card .card-thumbnail-lg img {
+    max-width: 650px;
+    max-height: 650px; }
+  .card .card-thumbnail-md img {
+    max-width: 300px;
+    max-height: 300px; }
+  .card .card-thumbnail-sm img {
+    max-width: 150px;
+    max-height: 150px; }
 
 /*# sourceMappingURL=vbtizer.css.map */

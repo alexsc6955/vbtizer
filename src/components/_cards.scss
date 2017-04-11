@@ -2,4 +2,59 @@
 	position: relative;
 	border: 2px solid $brand-primary;
 	@include border-radius(5px);
+	.card-header {
+		padding: 1rem 1rem 0;
+		margin-bottom: 1rem;
+		border-bottom: 1px solid $brand-primary;
+	}
+	.card-content {
+		padding: 0 1rem;
+		margin-bottom: 1rem;
+	}
+	.card-footer {
+		padding: 1rem 1rem;
+		border-top: 1px solid $brand-primary;
+	}
+	.card-title {
+		margin-bottom: 1rem;
+	}
+	.card-subtitle {
+		margin: 0 0 1rem;
+		color: $gray;
+	}
+	.card-thumbnail {
+		&-full,
+		&-lg,
+		&-md,
+		&-sm {
+			margin-bottom: 1rem;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&-full {
+			img {
+				width: 100%;
+			}
+		}
+		&-lg {
+			img {
+				max-width: 650px;
+				max-height: 650px;
+			}
+		}
+		&-md {
+			img {
+				max-width: 300px;
+				max-height: 300px;
+			}
+		}
+		&-sm {
+			img {
+				max-width: 150px;
+				max-height: 150px;
+			}
+		}
+	}
 }
