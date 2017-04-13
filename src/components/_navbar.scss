@@ -134,6 +134,14 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 				background-color: $navbar-light-link-hover-bg;
 			}
 		}
+		//
+		// Add style to ``.navbar-[light|inverse] .nav > li.active``
+		.nav {
+			li.active a {
+				color: $navbar-light-link-active-color;
+				background-color: $navbar-light-link-hover-bg;
+			}
+		}
 	}
 	&-inverse {
 		background-color: $navbar-inverse-bg;

@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v-0.6.3
+ * Vbtizer v-0.6.8
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -921,6 +921,8 @@ mark,
     .list-inline > li :not(:last-child) {
       margin-right: 4.375px;
       margin-right: 0.3125rem; }
+    .list-inline > li .vi {
+      margin: 0 !important; }
 
 abbr,
 .initialism {
@@ -955,7 +957,7 @@ blockquote,
   font-style: normal; }
 .vi {
   display: inline-block;
-  font: normal normal normal 14px/1.5 VbtIcons;
+  font: normal normal normal .875rem/1 VbtIcons;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -1172,6 +1174,11 @@ kbd {
   display: block;
   margin: 0 auto; }
 
+/*! Remove Pointer events */
+.remove-pointer-events {
+  pointer-events: none;
+  cursor: default; }
+
 /*! Header Componet */
 .page-header {
   min-height: 50px;
@@ -1267,6 +1274,9 @@ kbd {
       .navbar-light a.active {
         color: #222222;
         background-color: #eee; }
+    .navbar-light .nav li.active a {
+      color: #222222;
+      background-color: #eee; }
   .navbar-inverse {
     background-color: #333;
     border-color: #eee; }

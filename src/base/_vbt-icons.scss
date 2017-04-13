@@ -30,7 +30,7 @@ $vi-font-style: normal;
 
 .vi {
 	display: inline-block;
-	font: normal normal normal 14px/1.5 VbtIcons; // style, variant, weight, size/line height, family
+	font: normal normal normal .875rem/1 VbtIcons; // style, variant, weight, size/line height, family
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;

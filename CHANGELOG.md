@@ -1,15 +1,29 @@
 ## v-0.6
 
+### v-0.6.8
+
+**Changes**
+
+- Add style to ``.navbar-[light|inverse] .nav > li.active``
+- Changed font-size/line-height from `14px/1.5` to ``.875rem/1`` on ``.vi`` css class
+- Remove margin from ``.vi`` to prevent icon margins from affecting ``.list-inline`` design
+
+### v-0.6.5
+
+**Changes**
+
+- ``remove-pointer-events`` mixin and css class added.
+
 ### v-0.6.4
 
 **Changes**
 
 - Some features added to ``.card``.
-	``.card-header``
-	``.card-title``
-	``.card-subtitle``
-	``.card-content``
-	``.card-footer``
+	- ``.card-header``
+	- ``.card-title``
+	- ``.card-subtitle``
+	- ``.card-content``
+	- ``.card-footer``
 - ``center-block`` mixin added
 
 ### v-0.6.1

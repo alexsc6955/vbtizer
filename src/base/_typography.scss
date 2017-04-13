@@ -143,6 +143,11 @@ mark,
 		:not(:last-child) {
 			@include rem-px(margin-right, $list-inline-gap);
 		}
+		//
+		// prevent icon margins from affecting `.list-inline` design
+		.vi {
+			margin: 0 !important;
+		}
 	}
 }
 //

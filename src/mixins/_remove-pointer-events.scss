@@ -1,0 +1,19 @@
+//
+// Remove Pointer Events
+//
+
+//
+// Mixin
+//
+// Use this mixin to remove pointer events
+@mixin remove-pointer-events() {
+	pointer-events: none;
+	cursor: default;
+}
+
+//
+// Css classes and elements
+/*! Remove Pointer events */
+.remove-pointer-events {
+	@include remove-pointer-events;
+}
