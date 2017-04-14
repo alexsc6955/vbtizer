@@ -1,6 +1,6 @@
 {
   "name": "vbtizer",
-  "version": "0.6.8",
+  "version": "0.7.2",
   "description": "Tiny css Framework",
   "main": "vbtizer.js",
   "directories": {
@@ -10,7 +10,11 @@
     "webpack": "webpack",
     "grunt": "grunt",
     "build:js": "npm run webpack & npm run grunt",
-    "build:css": "node-sass -w scss/vbtizer.scss --output-style compressed dist/css/vbtizer.min.css"
+    "sass": "node-sass scss/vbtizer.scss --output-style spanded scss/dist/vbtizer.css",
+    "watch-sass": "node-sass -w scss/vbtizer.scss --output-style spanded scss/dist/vbtizer.css",
+    "minify-css": "node-sass scss/vbtizer.scss --output-style compressed dist/css/vbtizer.min.css",
+    "build:css": "npm run sass && npm run minify-css",
+    "build": "npm run build:js && npm run build:css"
   },
   "repository": {
     "type": "git",
