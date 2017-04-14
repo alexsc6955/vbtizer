@@ -1,5 +1,11 @@
 ## v-0.8
 
+### v-0.8.5
+
+**Changes**
+
+- Images Css classes now use ``border-radius`` mixin to add vendor prefix.
+
 ### v-0.8.4
 
 **Changes**

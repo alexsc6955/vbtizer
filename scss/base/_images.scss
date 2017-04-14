@@ -27,16 +27,16 @@
 // Thumbnail
 .img-thumbnail {
 	padding: .25rem;
-	border: 1px solid $silver;
-	border-radius: $border-radius-sm;
+	border: 1px solid $border-default-color;
+	@include border-radius($border-radius-sm);
 }
 //
 // Thumbnail
 .img-rounded {
-	border-radius: $border-radius-lg;
+	@include border-radius($border-radius-lg);
 }
 //
 // Thumbnail
 .img-circle {
-	border-radius: 50%;
+	@include border-radius(50%);
 }

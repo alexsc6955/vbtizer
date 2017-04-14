@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v-0.8.4
+ * Vbtizer v-0.8.5
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1060,13 +1060,19 @@ kbd {
 .img-thumbnail {
   padding: .25rem;
   border: 1px solid #dddddd;
-  border-radius: 0.2rem; }
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  background-clip: padding-box; }
 
 .img-rounded {
-  border-radius: 0.3rem; }
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  background-clip: padding-box; }
 
 .img-circle {
-  border-radius: 50%; }
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box; }
 
 /*! Floats Utility */
 .float-left {
