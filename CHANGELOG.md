@@ -1,5 +1,11 @@
 ## v-0.7
 
+### v-0.7.2
+
+**Changes**
+
+- Dropdown plugin es6 version
+
 ### v-0.7.0
 
 **Changes**

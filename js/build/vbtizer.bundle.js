@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,45 +73,137 @@
 "use strict";
 
 
-;(function ($, doc, win) {
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
 
-	function Dorpdown(el, opts) {
-		this.elmt = $(el);
-		this.opts = opts;
+var _plugin = __webpack_require__(1);
 
-		this.win = win;
+var _plugin2 = _interopRequireDefault(_plugin);
 
-		this.dropdown = this.elmt.find('.dropdown-togle');
-		this.target = this.elmt.find('.dropdown-menu');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-		this.init();
-	}
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /*
+                                                                                                                                                           * Dropdown Plugin
+                                                                                                                                                           */
 
-	Dorpdown.prototype.init = function () {
+var Dropdown = function Dropdown(element, options) {
+	_classCallCheck(this, Dropdown);
 
-		var self = this;
+	var $element = $(element);
+	var $target = $element.find('.dropdown-menu');
 
-		$(win).on('click', function (e) {
+	$(window).on('click', function (event) {
 
-			var target = $(e.target);
+		var eventTarget = $(event.target);
+		var dropdownMenu = $element.find('.dropdown-menu');
 
-			if (target.hasClass('dropdown-togle') || target.parents().hasClass('dropdown-togle')) {
-				e.preventDefault();
-				self.target.toggle();
-			} else {
-				self.target.hide();
-			}
-		});
-	};
+		if (eventTarget.hasClass('dropdown-toggle') || eventTarget.parents().hasClass('dropdown-toggle')) {
+			event.preventDefault();
+			$target.toggle();
+		} else {
+			$target.hide();
+		}
+	});
+};
 
-	$.fn.widget = function (opts) {
-		return this.each(function () {
-			new Dorpdown(this, opts);
-		});
-	};
-})(jQuery, document, window);
+exports.default = Dropdown;
 
-$('.dropdown').widget({ optionA: 'a', optionB: 'b' });
+
+Dropdown.DEFAULTS = {};
+
+(0, _plugin2.default)('Dropdown', Dropdown);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports.default = plugin;
+/*
+ * Create a jQuery plugin
+ *
+ * @param pluginName [string] Plugin name
+ * @param className [object] Class of the plugin
+ * @param shortHand [bool] Generate a shorthand as $.pluginName
+ *
+ * @example
+ *
+ * import plugin from 'plugin';
+ *
+ * class MyPlugin {
+ *     constructor(element, options) {
+ *         // My awesome MyPlugin constructor...
+ *     }
+ *
+ *     // Other awesome MyPlugin methods
+ * }
+ *
+ * MyPlugin.DEFAULTS = {};
+ *
+ * plugin('myPlugin', MyPlugin');
+ */
+function plugin(pluginName, className) {
+  var shortHand = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+
+  var dataName = '__' + pluginName;
+  var old = $.fn[pluginName];
+
+  $.fn[pluginName] = function (option) {
+    return this.each(function () {
+      var $this = $(this);
+      var data = $this.data(dataName);
+      var options = $.extend({}, className.DEFAULTS, $this.data(), (typeof option === 'undefined' ? 'undefined' : _typeof(option)) === 'object' && option);
+
+      if (!data) {
+        $this.data(dataName, data = new className(this, options));
+      }
+
+      if (typeof option === 'string') {
+        data[option]();
+      }
+    });
+  };
+
+  // - Short hand
+  if (shortHand) {
+    $[pluginName] = function (options) {
+      return $({})[pluginName](options);
+    };
+  }
+
+  // - No conflict
+  $.fn[pluginName].noConflict = function () {
+    return $.fn[pluginName] = old;
+  };
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _dropdown = __webpack_require__(0);
+
+var _dropdown2 = _interopRequireDefault(_dropdown);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+$('.dropdown').Dropdown(); /*!
+                            * Vbtizer v-0.7.2
+                            * Copyright 2017
+                            */
 
 /***/ })
 /******/ ]);
