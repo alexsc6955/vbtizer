@@ -1,0 +1,37 @@
+{
+  "name": "vbtizer",
+  "version": "0.6.8",
+  "description": "Tiny css Framework",
+  "main": "vbtizer.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "grunt": "grunt",
+    "build:js": "npm run webpack & npm run grunt",
+    "build:css": "node-sass -w scss/vbtizer.scss --output-style compressed dist/css/vbtizer.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rincorpes/vbtizer.git"
+  },
+  "author": "rincorpes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rincorpes/vbtizer/issues"
+  },
+  "homepage": "https://github.com/Rincorpes/vbtizer#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.3.3"
+  }
+}
