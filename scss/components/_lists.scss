@@ -1,0 +1,21 @@
+//
+// List group
+.list-group {
+	@include list-unstyled;
+	.list-group-item {
+		display: block;
+		a {
+			display: block;
+			padding: .5rem;
+			color: $gray-light;
+			@include hover-focus {
+				background-color: $silver;
+				color: $gray;
+			}
+		}
+		border-bottom: 1px solid #e7e7e7;
+		&:last-child {
+			border: none;
+		}
+	}
+}

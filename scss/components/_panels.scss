@@ -1,0 +1,43 @@
+//
+// Panels
+//
+
+//
+// Css Properties
+.panel {
+	position: relative;
+	border: 2px solid transparent;
+	@include border-radius($border-radius);
+	margin-bottom: 1rem;
+	.panel-heading {
+		padding: 1rem .5rem;
+		border-bottom: 1px solid transparent;
+	}
+	.panel-body {
+		padding: 1rem .5rem;
+	}
+	&-light {
+		color: $gray;
+		border-color: #e7e7e7;
+		.panel-heading {
+			background-color: #f8f8f8;
+			border-color: #e7e7e7;
+		}
+	}
+	&-inverse {
+		border-color: $gray-darker;
+		.panel-heading {
+			background-color: $brand-inverse;
+			color: $white;
+			border-color: $gray-darker;
+		}
+	}
+	&-primary {
+		border-color: $brand-primary;
+		.panel-heading {
+			background-color: $brand-primary;
+			color: $white;
+			border-color: $white;
+		}
+	}
+}

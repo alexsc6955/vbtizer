@@ -1,11 +1,21 @@
+//
+// Cards
+//
+
+//
+// Vars
+
+//
+// Css Properties
 .card {
+	margin-bottom: 1rem;
 	position: relative;
-	border: 2px solid $brand-primary;
+	border: 2px solid #e7e7e7;
 	@include border-radius(5px);
 	.card-header {
 		padding: 1rem 1rem 0;
 		margin-bottom: 1rem;
-		border-bottom: 1px solid $brand-primary;
+		border-bottom: 1px solid #e7e7e7;;
 	}
 	.card-content {
 		padding: 0 1rem;
@@ -13,7 +23,7 @@
 	}
 	.card-footer {
 		padding: 1rem 1rem;
-		border-top: 1px solid $brand-primary;
+		border-top: 1px solid #e7e7e7;
 	}
 	.card-title {
 		margin-bottom: 1rem;

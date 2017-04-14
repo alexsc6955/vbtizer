@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v-0.7.2
+ * Vbtizer v-0.8.0
  * Copyright 2017
  */
 

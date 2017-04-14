@@ -1,0 +1,27 @@
+//
+// Tags
+
+//
+// Css Properties
+.tag {
+	padding: .25rem;
+	font-size: 80%;
+	font-weight: $font-weight-bold;
+	border: 1px solid transparent;
+	@include border-radius($border-radius-sm);
+	&-light {
+		background-color: #f8f8f8;
+		color: $gray;
+		border-color: #e7e7e7;
+	}
+	&-inverse {
+		background-color: $brand-inverse;
+		color: $white;
+		border-color: $gray-darker;
+	}
+	&-primary {
+		background-color: $brand-primary;
+		color: $white;
+		border-color: $white;
+	}
+}

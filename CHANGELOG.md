@@ -1,3 +1,17 @@
+## v-0.8
+
+### v-0.8.0
+
+**Changes**
+
+- Cards component spaces fixed
+- Cards component default border color changed
+- Tags component added
+- Panel component added
+- Lists component started
+- Text component started
+- Background component started
+
 ## v-0.7
 
 ### v-0.7.2
