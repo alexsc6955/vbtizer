@@ -201,7 +201,7 @@ var _dropdown2 = _interopRequireDefault(_dropdown);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $('.dropdown').Dropdown(); /*!
-                            * Vbtizer v-0.7.2
+                            * Vbtizer v-0.8.0
                             * Copyright 2017
                             */
 
