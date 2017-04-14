@@ -1,0 +1,23 @@
+//
+// Page
+//
+
+//
+// Vars
+$page-spacer-y: $spacer-y;
+$page-border-color: $border-default-color;
+
+//
+// Css classes and elements
+.page {
+	&-header {
+		@include rem-px(padding-top, ($page-spacer-y * 2));
+		@include rem-px(margin-bottom, $page-spacer-y);
+		border-bottom: 2px solid $border-default-color;
+	}
+	&-footer {
+		@include rem-px(padding-top, $page-spacer-y);
+		@include rem-px(margin-top, $page-spacer-y);
+		border-top: 2px solid $border-default-color;
+	}
+}

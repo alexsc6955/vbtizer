@@ -1,5 +1,13 @@
 ## v-0.8
 
+### v-0.8.4
+
+**Changes**
+
+- ``$enable-html-font-size`` global var added
+	- If it's setted ``true`` you can choose the font size for the html tag in any layout brakpoint and that font size in ``px`` will be used as pixel base to convert ``rem`` units.
+	- Othewise you can set its value ``false`` and the size you choose will be applyed to the ``body`` tag so the pixel base to make ``rem`` convertions will be the size user choose on the browser or its default: ``16px``.
+
 ### v-0.8.3
 
 **Changes**

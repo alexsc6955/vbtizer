@@ -15,10 +15,24 @@ html {
 
 html {
 	//
-	// Font size for each breakpoint
-	@each $brakepoint, $font-size in $html-font-sizes {
-		@include media-breakpoint($brakepoint) {
-			font-size: $font-size;
+	// set $enable-html-font-size = false if you want that
+	// the pixel base for `rem`s to be the size user set in
+	// the browser
+	@if $enable-html-font-size {
+		//
+		// Font size for each breakpoint
+		@each $brakepoint, $font-size in $html-font-sizes {
+			@include media-breakpoint($brakepoint) {
+				font-size: $font-size;
+			}
+		}
+	} @else {
+		body {
+			@each $brakepoint, $font-size in $html-font-sizes {
+				@include media-breakpoint($brakepoint) {
+					@include rem-px(font-size, $font-size);
+				}
+			}
 		}
 	}
 }
@@ -30,7 +44,9 @@ body {
 		family: $font-family-base;
 		weight: $font-weight-base;
 	}
-	@include rem-px(font-size, $body-font-size);
+	@if $enable-html-font-size {
+		@include rem-px(font-size, $body-font-size);
+	}
 	line-height: $line-height-base;
 	color: $body-color;
 	background-color: $body-bg;
