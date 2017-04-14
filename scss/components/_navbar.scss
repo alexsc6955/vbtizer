@@ -7,7 +7,7 @@
 $navbar-spacer-y: $spacer-y;
 $navbar-spacer-x: $spacer-x;
 
-$navbar-border-width: 0;
+$navbar-border-width: 1px;
 
 $nav-link-padding: .75rem;
 
@@ -56,17 +56,13 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 	// use with an unordered list. This will contain the
 	// link list
 	.nav {
-		@include list-unstyled;
 		margin: {
-			top: 0;
 			@include rem-px(right, -$navbar-spacer-x);
 			bottom: 0;
 			@include rem-px(left, -$navbar-spacer-x);
 		}
 		> li {
-			margin: 0;
-			display: inline-block;
-			float: left;
+			padding: 0;
 			a {
 				display: block;
 				@include rem-px(padding, $nav-link-padding);
@@ -160,5 +156,25 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 				background-color: $navbar-inverse-link-hover-bg;
 			}
 		}
+	}
+}
+
+//
+// Nav
+//
+// use with an unordered list. This will contain the
+// link list
+.nav {
+	@include clearfix;
+	@include list-unstyled;
+	margin: {
+		top: 0;
+		bottom: $navbar-spacer-y;
+	}
+	> li {
+		margin: 0;
+		padding: ($navbar-spacer-y / 2) ($navbar-spacer-x / 2);
+		display: inline-block;
+		float: left;
 	}
 }

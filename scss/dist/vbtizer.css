@@ -1,5 +1,5 @@
 /*!
- * Vbtizer v-0.8.0
+ * Vbtizer v-0.8.3
  * Copyright 2017
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -211,16 +211,16 @@ html {
   box-sizing: inherit; }
 
 html {
-  font-size: 8px; }
+  font-size: 12px; }
   @media (min-width: 576px) {
     html {
-      font-size: 10px; } }
+      font-size: 14px; } }
   @media (min-width: 768px) {
     html {
-      font-size: 12px; } }
+      font-size: 14px; } }
   @media (min-width: 992px) {
     html {
-      font-size: 14px; } }
+      font-size: 16px; } }
   @media (min-width: 1200px) {
     html {
       font-size: 16px; } }
@@ -228,7 +228,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
@@ -249,19 +249,19 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   margin-bottom: 0.5rem; }
 
 p {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem; }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem; }
 
 ol ol,
@@ -275,30 +275,30 @@ dt {
 
 dd {
   margin-left: 0;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   margin-bottom: 0.5rem; }
 
 abbr[title] {
   cursor: help; }
 
 address {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit; }
 
 blockquote {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   margin: 0 0 1rem; }
 
 pre {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
   overflow: auto; }
 
 figure {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   margin: 0 0 1rem; }
 
 img {
@@ -307,7 +307,7 @@ img {
 table {
   border-collapse: collapse; }
   table caption {
-    padding: 10.5px 0 10.5px;
+    padding: 12px 0 12px;
     padding: 0.75rem 0 0.75rem;
     text-align: left;
     caption-side: bottom; }
@@ -316,7 +316,7 @@ table {
 
 form {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem; }
   form fieldset {
     padding: 0;
@@ -326,14 +326,14 @@ form {
     display: block;
     width: 100%;
     padding: 0;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     margin-bottom: 0.5rem;
-    font-size: 21px;
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: inherit; }
   form label {
     display: inline-block;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     margin-bottom: 0.5rem; }
   form input,
   form button,
@@ -350,33 +350,33 @@ form {
 .container {
   margin: 0 auto;
   overflow: hidden;
-  padding-right: 14px;
+  padding-right: 16px;
   padding-right: 1rem;
-  padding-left: 14px;
+  padding-left: 16px;
   padding-left: 1rem; }
   @media (min-width: 576px) {
     .container {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 768px) {
     .container {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 992px) {
     .container {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .container {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 576px) {
     .container {
@@ -398,64 +398,64 @@ form {
 .container-fluid {
   margin: 0 auto;
   overflow: hidden;
-  padding-right: 14px;
+  padding-right: 16px;
   padding-right: 1rem;
-  padding-left: 14px;
+  padding-left: 16px;
   padding-left: 1rem; }
   @media (min-width: 576px) {
     .container-fluid {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 768px) {
     .container-fluid {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 992px) {
     .container-fluid {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .container-fluid {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
 
 .row {
   overflow: hidden;
-  margin-right: -14px;
+  margin-right: -16px;
   margin-right: -1rem;
-  margin-left: -14px;
+  margin-left: -16px;
   margin-left: -1rem; }
   @media (min-width: 576px) {
     .row {
-      margin-right: -14px;
+      margin-right: -16px;
       margin-right: -1rem;
-      margin-left: -14px;
+      margin-left: -16px;
       margin-left: -1rem; } }
   @media (min-width: 768px) {
     .row {
-      margin-right: -14px;
+      margin-right: -16px;
       margin-right: -1rem;
-      margin-left: -14px;
+      margin-left: -16px;
       margin-left: -1rem; } }
   @media (min-width: 992px) {
     .row {
-      margin-right: -14px;
+      margin-right: -16px;
       margin-right: -1rem;
-      margin-left: -14px;
+      margin-left: -16px;
       margin-left: -1rem; } }
   @media (min-width: 1200px) {
     .row {
-      margin-right: -14px;
+      margin-right: -16px;
       margin-right: -1rem;
-      margin-left: -14px;
+      margin-left: -16px;
       margin-left: -1rem; } }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
@@ -463,33 +463,33 @@ form {
   width: 100%;
   min-height: 1px;
   float: left;
-  padding-right: 14px;
+  padding-right: 16px;
   padding-right: 1rem;
-  padding-left: 14px;
+  padding-left: 16px;
   padding-left: 1rem; }
   @media (min-width: 576px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 768px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 992px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
   @media (min-width: 1200px) {
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl {
-      padding-right: 14px;
+      padding-right: 16px;
       padding-right: 1rem;
-      padding-left: 14px;
+      padding-left: 16px;
       padding-left: 1rem; } }
 
 .col-1 {
@@ -755,7 +755,7 @@ form {
 
 /*! Typography */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -766,39 +766,39 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 70%; }
 
 h1, .h1 {
-  font-size: 35px;
+  font-size: 40px;
   font-size: 2.5rem; }
 
 h2, .h2 {
-  font-size: 28px;
+  font-size: 32px;
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 24.5px;
+  font-size: 28px;
   font-size: 1.75rem; }
 
 h4, .h4 {
-  font-size: 21px;
+  font-size: 24px;
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 17.5px;
+  font-size: 20px;
   font-size: 1.25rem; }
 
 h6, .h6 {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem; }
 
 hr {
-  margin-top: 14px;
+  margin-top: 16px;
   margin-top: 1rem;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
   border: 0;
     border-top: 2px solid rgba(16, 16, 16, 0.1); }
 
 .lead {
-  font-size: 17.5px;
+  font-size: 20px;
   font-size: 1.25rem;
   font-weight: 300; }
 
@@ -809,7 +809,7 @@ small,
 
 mark,
 .mark {
-  padding: 1.4px;
+  padding: 1.6px;
   padding: 0.1rem;
   background-color: #fcf8e3; }
 
@@ -823,7 +823,7 @@ mark,
   .list-inline > li {
     display: inline-block; }
     .list-inline > li :not(:last-child) {
-      margin-right: 4.375px;
+      margin-right: 5px;
       margin-right: 0.3125rem; }
     .list-inline > li .vi {
       margin: 0 !important; }
@@ -835,13 +835,13 @@ abbr,
 
 blockquote,
 .blockquote {
-  padding: 7px 14px;
+  padding: 8px 16px;
   padding: 0.5rem 1rem;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-top: 1rem;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
-  font-size: 15.75px;
+  font-size: 18px;
   font-size: 1.125rem;
   border-left: 0.25rem solid #eee; }
   blockquote .blockquote-footer,
@@ -1001,9 +1001,9 @@ samp {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
-  padding: 14px;
+  padding: 16px;
   padding: 1rem;
   font-size: 90%;
   color: #333;
@@ -1020,7 +1020,7 @@ pre {
     overflow-y: scroll; }
 
 code {
-  padding: 2.8px 5.6px;
+  padding: 3.2px 6.4px;
   padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #bd4147;
@@ -1084,34 +1084,30 @@ kbd {
   pointer-events: none;
   cursor: default; }
 
-/*! Header Componet */
 .page-header {
-  min-height: 50px;
-  margin-bottom: 14px;
-  margin-bottom: 1rem;
-  padding-top: 28px;
+  padding-top: 32px;
   padding-top: 2rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #dddddd; }
 
-/*! Footer Component */
 .page-footer {
-  min-height: 50px;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-top: 1rem;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-top: 1rem;
   border-top: 2px solid #dddddd; }
 
 /*! Navbar Component */
 .navbar {
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
-  padding-right: 14px;
+  padding-right: 16px;
   padding-right: 1rem;
-  padding-left: 14px;
+  padding-left: 16px;
   padding-left: 1rem;
-  border-bottom: 0 solid transparent;
+  border-bottom: 1px solid transparent;
   -webkit-border-radius: 0.25rem;
   border-radius: 0.25rem;
   background-clip: padding-box; }
@@ -1120,21 +1116,16 @@ kbd {
     content: "";
     clear: both; }
   .navbar .nav {
-    padding-left: 0;
-    list-style: none;
-    margin-top: 0;
-    margin-right: -14px;
+    margin-right: -16px;
     margin-right: -1rem;
     margin-bottom: 0;
-    margin-left: -14px;
+    margin-left: -16px;
     margin-left: -1rem; }
     .navbar .nav > li {
-      margin: 0;
-      display: inline-block;
-      float: left; }
+      padding: 0; }
       .navbar .nav > li a {
         display: block;
-        padding: 10.5px;
+        padding: 12px;
         padding: 0.75rem; }
   .navbar h1 {
     margin: 0;
@@ -1143,26 +1134,26 @@ kbd {
     float: left; }
   .navbar .navbar-brand {
     float: left;
-    font-size: 17.5px;
+    font-size: 20px;
     font-size: 1.25rem;
-    padding: 7px 0;
+    padding: 8px 0;
     padding: 0.5rem 0;
-    margin-right: 14px;
+    margin-right: 16px;
     margin-right: 1rem; }
     .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
       background-color: transparent; }
     .navbar .navbar-brand img {
       width: auto;
-      max-height: 26.25px;
+      max-height: 30px;
       max-height: 1.875rem;
-      margin-top: -5.25px;
+      margin-top: -6px;
       margin-top: -0.375rem;
-      margin-right: 7px;
+      margin-right: 8px;
       margin-right: 0.5rem; }
   .navbar .navbar-text {
-    padding: 12.25px 0;
+    padding: 14px 0;
     padding: 0.875rem 0;
-    margin: 0 14px 0 0;
+    margin: 0 16px 0 0;
     margin: 0 1rem 0 0;
     font-size: 80%;
     float: left; }
@@ -1195,6 +1186,21 @@ kbd {
       .navbar-inverse a.active {
         color: #e1e1e1;
         background-color: #222; }
+
+.nav {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+  .nav::after {
+    display: block;
+    content: "";
+    clear: both; }
+  .nav > li {
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+    float: left; }
 
 .card {
   margin-bottom: 1rem;

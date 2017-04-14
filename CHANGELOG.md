@@ -1,5 +1,13 @@
 ## v-0.8
 
+### v-0.8.3
+
+**Changes**
+
+- ``border-default-color`` var added to scss/base/_globals.scss
+- Header and Footer componets moved to scss/components/_page.scss
+- Now ``.nav`` can be used from outside ``.navbar``
+
 ### v-0.8.0
 
 **Changes**

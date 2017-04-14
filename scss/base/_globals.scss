@@ -15,7 +15,7 @@
 	@return if($n < length($items), nth($items, $n + 1), null);
 }
 
-$pixel-base: 14px;
+$pixel-base: 16px;
 
 @function rem($unit, $base: $pixel-base) {
 	@return (parseInt($unit) / parseInt($base) + rem);
@@ -64,11 +64,11 @@ $brand-inverse: $gray-dark;
 //
 // Html
 $html-font-sizes: (
-	xs: ($pixel-base - 6),
-	sm: ($pixel-base - 4),
+	xs: ($pixel-base - 4),
+	sm: ($pixel-base - 2),
 	md: ($pixel-base - 2),
 	lg: ($pixel-base),
-	xl: ($pixel-base + 2)
+	xl: ($pixel-base)
 );
 
 //
@@ -110,7 +110,8 @@ $spacer-x: $spacer;
 $spacer-y: $spacer;
 
 //
-// Boreder radius
+// Boreders
+$border-default-color: $silver;
 $border-radius: .25rem;
 $border-radius-lg: .3rem;
 $border-radius-sm: .2rem;

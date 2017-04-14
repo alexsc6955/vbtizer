@@ -1,6 +1,6 @@
 {
   "name": "vbtizer",
-  "version": "0.8.0",
+  "version": "0.8.3",
   "description": "Tiny css Framework",
   "main": "vbtizer.js",
   "directories": {
