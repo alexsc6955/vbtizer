@@ -73,32 +73,45 @@
 "use strict";
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+;(function ($, doc, win) {
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	function Dorpdown(el, opts) {
+		this.elmt = $(el);
+		this.opts = opts;
 
-var Test = function () {
-	function Test(message) {
-		_classCallCheck(this, Test);
+		this.win = win;
 
-		this.message = message;
+		this.dropdown = this.elmt.find('.dropdown-togle');
+		this.target = this.elmt.find('.dropdown-menu');
+
+		this.init();
 	}
 
-	_createClass(Test, [{
-		key: 'getMessage',
-		get: function get() {
-			return this.message;
-		}
-	}]);
+	Dorpdown.prototype.init = function () {
 
-	return Test;
-}();
+		var self = this;
 
-;
+		$(win).on('click', function (e) {
 
-var test = new Test('Hello World');
+			var target = $(e.target);
 
-console.log(test.getMessage);
+			if (target.hasClass('dropdown-togle') || target.parents().hasClass('dropdown-togle')) {
+				e.preventDefault();
+				self.target.toggle();
+			} else {
+				self.target.hide();
+			}
+		});
+	};
+
+	$.fn.widget = function (opts) {
+		return this.each(function () {
+			new Dorpdown(this, opts);
+		});
+	};
+})(jQuery, document, window);
+
+$('.dropdown').widget({ optionA: 'a', optionB: 'b' });
 
 /***/ })
 /******/ ]);

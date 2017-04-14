@@ -59,9 +59,9 @@ $navbar-inverse-link-hover-bg: $navbar-inverse-link-hover-bg;
 		@include list-unstyled;
 		margin: {
 			top: 0;
-			@include rem-px(right, $navbar-spacer-x);
+			@include rem-px(right, -$navbar-spacer-x);
 			bottom: 0;
-			@include rem-px(left, $navbar-spacer-x);
+			@include rem-px(left, -$navbar-spacer-x);
 		}
 		> li {
 			margin: 0;

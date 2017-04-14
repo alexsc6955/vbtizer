@@ -1,0 +1,37 @@
+//
+// Dropdown
+//
+
+/*! Dropdown Component */
+
+//
+// Css Properties
+.dropdown {
+	&.dropdown-hover {
+		@include hover-focus {
+			> .dropdown-menu {
+				display: block !important;
+			}
+		}
+	}
+	.dropdown-toggle {
+
+	}
+	.dropdown-menu {
+		@include list-unstyled;
+		position: absolute;
+		z-index: 1000;
+		min-width: 12.5rem;
+		background-color: #f8f8f8;
+		border: 1px solid #e7e7e7;
+		@include border-bottom-radius($border-radius); 
+		display: none;
+		a {
+			color: $gray-light;
+			@include hover-focus {
+				background-color: $silver;
+				color: $gray;
+			}
+		}
+	}
+}

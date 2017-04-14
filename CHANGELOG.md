@@ -1,3 +1,34 @@
+## v-0.7
+
+### v-0.7.0
+
+**Changes**
+
+- ``.navbar .nav`` y margins fixed
+- Dropdown component added
+	- Basic elements
+	- Basic styles
+- The project now uses node package manager
+	- Node modules
+		- babel-cli: ^6.24.1
+		- babel-core: ^6.24.1
+		- babel-loader: ^6.4.1
+		- babel-preset-es2015: ^6.24.1
+		- grunt: ^1.0.1
+		- grunt-cli: ^1.2.0
+		- grunt-contrib-uglify: ^2.3.0
+		- node-sass: ^4.5.2
+		- nodemon: ^1.11.0
+		- webpack: ^2.3.3
+	- Scripts
+		- webpack: webpack
+		- grunt: grunt
+		- build:js: npm run webpack & npm run grunt
+		- build:css: node-sass -w scss/vbtizer.scss --output-style compressed dist/css/vbtizer.min.css
+- To compile and minify the scss you use ``npm run build:css`` it uses the ``node-sass`` module to watch, compile and minify the ``css`` output.
+- First test for the Dropdown jQuery plugin
+- The jQuery plugins are supposed to be written with es6 so we use the ``webpack`` module to transpile them to es5 and then the ``grunt`` module to minify the output.
+
 ## v-0.6
 
 ### v-0.6.8
