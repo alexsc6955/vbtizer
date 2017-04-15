@@ -1,18 +1,53 @@
 # Vbtiver
 
-Vbtizer is a tiny css framework. You can use it as a basis for your own projects.
+Vbtizer is a tiny css framework. You can use it as a basis for your own projects or contribute to make it grow.
+
+[Versión en español](https://github.com/Rincorpes/vbtizer/LEEME.md)
+
+## Contents
+
+Inside **Vbtizer** you can find the following directory structure:
+
+```
+vbtizer/
+├── dist/
+│	├── css/
+│	├── fonts/
+│	└── js/
+├──	js/
+│	├── build/
+│	├── core/
+│	└── plugins
+└── scss/
+	├── base/
+	├── componets/
+	├── dist/
+	└── mixins/
+```
+
+#### The ``dist`` directory
+
+Contains the css, javascript and fonts, ready to be used.
+
+#### The ``js`` directory
+
+Contains the plugins builder and all plugins that has been developed, besides the uncompressed version of the precompile Vbtizer javascript.
+
+#### The ``sass`` directory
+
+Contains the source code for the css output, and the uncompressed version of the css.
 
 ## Getting Started
 
-**Vbtizer** is on development state but you you can [download](https://github.com/Rincorpes/vbtizer/archive/master.zip) it and start using it just by adding the files ``vbtizer.min.css`` and ``vbtizer.min.js`` located on ``dist/css`` and ``dist/js`` respectively.
+**Vbtizer** is on development status but you can [download it](https://github.com/Rincorpes/vbtizer/archive/master.zip) and start using it just by adding the files ``vbtizer.min.css`` and ``vbtizer.min.js`` located on ``dist/css`` and ``dist/js`` respectively.
 
-You need **jQuery** to make vbtizer jQuery plugins work.
+You need **jQuery** to make Vbtizer javascript plugins work.
 
-Otherwise you can clone the whole code from its [repository](https://github.com/Rincorpes/vbtizer) and build using it as a basis.
+Besides you can clone the whole code from its [repository](https://github.com/Rincorpes/vbtizer) and build using it as a basis.
 
 ### About contributing
 
-By the moment vbtizer has been developed by [Rincorpes](https://github.com/Rincorpes) but the idea it's you to make contributions so please feel free to make changes and make a pull request.
+**Vbtizer needs your help to grow**. By the moment Vbtizer has been developed by [Rincorpes](https://github.com/Rincorpes) but the idea it's you to make contributions so please feel free to download it, make changes and make a pull request.
 
 ## Features
 
