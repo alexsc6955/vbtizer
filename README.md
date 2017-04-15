@@ -1,55 +1,29 @@
 # Vbtiver
 
-Vbtizer is a tiny css framework built using sass. You can use it as a basis for your own projects. Feel free to make pull requests.
+Vbtizer is a tiny css framework. You can use it as a basis for your own projects.
 
-## Requirements
+## Getting Started
 
-Sass requires Rubi. If you're using Windows you should [download the installer](http://rubyinstaller.org/). You need the version >= 1.8.7 to use Sass.
+**Vbtizer** is on development state but you you can [download](https://github.com/Rincorpes/vbtizer/archive/master.zip) it and start using it just by adding the files ``vbtizer.min.css`` and ``vbtizer.min.js`` located on ``dist/css`` and ``dist/js`` respectively.
 
-Install Sass using the command prompt line.
+You need **jQuery** to make vbtizer jQuery plugins work.
 
-```
-$ gem install sass
-```
+Otherwise you can clone the whole code from its [repository](https://github.com/Rincorpes/vbtizer) and build using it as a basis.
 
-Check the version using:
+### About contributing
 
-```
-$ sass -v
-```
-
-Now you need to download vbtizer or clone it using ``git``.
-
-```
-$ git clone git://github.com/schacon/grit.git
-```
-
-## Usage
-
-To use the current features just by adding the **vbtizer** file located in the css dir into your project and call it with a ``<link>`` HTML tag.
-
-If you want to add your own features, then you have to compile them using sass.
-
-Open the src dir.
-
-```
-$ cd ~/src/
-```
-Then compile the project
-
-```
-sass --style compressed vbtizer.scss:[your css file path]
-```
+By the moment vbtizer has been developed by [Rincorpes](https://github.com/Rincorpes) but the idea it's you to make contributions so please feel free to make changes and make a pull request.
 
 ## Features
 
-- ``rem`` to ``px`` converter.
-- ``box-sizing`` mixin to use vendor prefix if older borowser support is enable
-- Layout breakpoints mixin.
-- Use ``rem`` and ``px`` with the same property for older browsers and ie support.
-- Normalize v5.
-- Reset Css.
-- Grid System.
-- Typography Styles.
-- Code Styles.
-- Navbar Component.
+1. ``rem`` to ``px`` utility which makes easier responsive design.
+2. Css properties mixins that include vendor prefixes.
+3. Layout breakpoint for responsive design.
+4. Normalize v5.
+5. Reset css.
+6. Grid System.
+7. Base styles for Typography, images and code.
+8. vbt-icons font
+9. Utilities: css classes and mixins to help you minify your coding time.
+10. Prebuilt css components.
+11. jQuery plugins for some components.
